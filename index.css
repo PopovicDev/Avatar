@@ -1,0 +1,232 @@
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100vh;
+	background-color:#EAAC8B;
+}
+
+#page{
+	display:none;
+	text-align:center;
+	animation:PeekABoo 2s linear forwards;
+}
+
+#page p{
+	margin-right:auto;
+	margin-left:auto;
+	font-size:1.25rem;
+	font-family:sans-serif;
+	margin-bottom:30px;
+	width:50ch;
+}
+
+.text{
+	background:url('pictures/background.png') no-repeat fixed;
+	background-size:100% 100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	animation:Disappear 2s linear 10s forwards;
+}
+
+h1{
+	position:absolute;
+	font-size: 4.5rem;
+	font-weight:800;
+	color:transparent;
+	-webkit-text-stroke:1px #ffffff;
+	font-family:"Arial",sans-serif;
+	background:url('pictures/text-bg.png');
+	background-size:1200px;
+	-webkit-background-clip:text;
+	letter-spacing:5px;
+	animation:
+		dropIn 3s ease-in-out,
+		avatar 17s linear infinite,
+		dropOut 0.75s linear 8s forwards;
+}
+
+:is(.earth img, .fire img, .air img, .water img){
+	position:fixed;
+	height:auto;
+	width:100px;
+}
+
+.earth img{
+	top:-170px;
+	left:-125px;
+	animation:
+		earthDropIn 2s ease-out 2s forwards,
+		earthDropOut 2s linear 8s forwards;
+}
+
+.fire img{
+	top:-270px;
+	right:-125px;
+	animation:
+		fireDropIn 2s ease-out 2s forwards,
+		fireDropOut 2s linear 8s forwards;
+}
+
+.air img{
+	bottom:-200px;
+	left:-160px;
+	animation:
+		airDropIn 2s ease-out 2s forwards,
+		airDropOut 2s linear 8s forwards;
+}
+
+.water img{
+	bottom:-200px;
+	right:-160px;
+	animation:
+		waterDropIn 2s ease-out 2s forwards,
+		waterDropOut 2s linear 8s forwards;
+}
+
+@keyframes avatar{
+	100%{
+		background-position:2000px 0px;
+	}
+}
+
+@keyframes dropIn{
+	0%{
+		transform:translateX(-1450px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+
+@keyframes earthDropIn{
+	0%{
+		transform:translate(-200px, -200px);
+	}
+	100%{
+		transform:translate(800px, 530px);
+	}
+}
+
+@keyframes fireDropIn{
+	0%{
+		transform:translate(200px, 0px);
+	}
+	100%{
+		transform:translate(-800px, 630px);
+	}
+}
+
+@keyframes airDropIn{
+	0%{
+		transform:translate(0px);
+	}
+	100%{
+		transform:translate(525px, -570px);
+	}
+}
+
+@keyframes waterDropIn{
+	0%{
+		transform:translate(0px);
+	}
+	100%{
+		transform:translate(-525px, -570px);
+	}
+}
+
+@keyframes dropOut{
+	0%{
+		transform:translate(0px);
+	}
+	75%{
+		opacity:0.25;
+	}
+	100%{
+		transform:translate(0px, 350px);
+		opacity:0;
+	}
+}
+
+@keyframes earthDropOut{
+	50%{
+		transform:translate(970px, 530px);
+	}
+	75%{
+		opacity:1;
+		transform:translate(970px, 530px);
+	}
+	100%{
+		opacity:0;
+		transform:translate(970px, 530px);
+	}
+}
+
+@keyframes fireDropOut{
+	50%{
+		transform:translate(-970px, 630px);
+	}
+	75%{
+		opacity:1;
+		transform:translate(-970px, 630px);
+	}
+	100%{
+		opacity:0;
+		transform:translate(-970px, 630px);
+	}
+}
+
+@keyframes airDropOut{
+	50%{
+		transform:translate(1000px, -570px);
+	}
+	75%{
+		transform:translate(1000px, -570px);
+		opacity:1;
+	}
+	100%{
+		transform:translate(1000px, -570px);
+		opacity:0;
+	}
+}
+
+@keyframes waterDropOut{
+	50%{
+		transform:translate(-1000px, -570px);
+	}
+	75%{
+		transform:translate(-1000px, -570px);
+		opacity:1;
+	}
+	100%{
+		transform:translate(-1000px, -570px);
+		opacity:0;
+	}
+}
+
+@keyframes Disappear{
+	100%{
+		transform:translateY(-2000px);
+	}
+}
+
+@keyframes PeekABoo{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
