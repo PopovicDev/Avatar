@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *,
 *:before,
 *:after{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+@font-face{
+	font-family:RedHands;
+	src: url(../fonts/KGRedHands.ttf);
 }
 
 .background1{
@@ -49,19 +56,21 @@
 }
 
 .background2 h1{
+	font-family: 'Righteous', cursive;
+	font-weight:normal;
+	font-style:normal;
 	font-size: 4.5rem;
-	font-weight:800;
+	font-weight:100;
 	color:transparent;
 	-webkit-text-stroke:1px #ffffff;
-	font-family:"Arial",sans-serif;
 	background-image:url('../pictures/text-bg.png');
-	background-size:1200px;
+	background-size:fill;
 	background-clip:text;
 	-webkit-background-clip:text;
 	letter-spacing:5px;
 	animation:
 		dropIn 1.5s ease-in-out forwards,
-		TextMove 17s linear infinite,
+		TextMove 8s linear infinite,
 		Disappear 2s linear 7s forwards;
 }
 
@@ -243,6 +252,9 @@
 	}
 	50%{
 		opacity:0.2;
+	}
+	90%{
+		opacity:0.01;
 	}
 	100%{
 		opacity:0;
