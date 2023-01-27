@@ -6,7 +6,7 @@
 	justify-content:space-between;
 	padding:5px 50px;
 	height:60px;
-	background:url(../pictures/header_pic.jpg);
+	background:url(../pictures/header_pic.webp);
 	background-position:center 1020px;
 	animation:ContentIn 4.5s linear forwards;
 	position:fixed;
