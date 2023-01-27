@@ -1,33 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-*,
-*:before,
-*:after{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html{
-	height: 100%;
-}
-
-body{
-	height: 100vh;
-	background:url(../pictures/intro/wallpaper2.jpg) no-repeat;
-}
-
 #header{
 	display:none;
 	align-items:center;
 	justify-content:space-between;
 	padding:5px 50px;
 	height:60px;
-	background-color:dodgerblue;
+	background:url(../pictures/header_pic.jpg);
+	background-position:center 1020px;
 	animation:ContentIn 4.5s linear forwards;
-	position:sticky;
+	position:fixed;
 	top:0;
-	z-index:9999;
+	z-index:99999;
+	width:100%;
 }
 
 #header img{

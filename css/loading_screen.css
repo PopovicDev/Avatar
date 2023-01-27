@@ -42,8 +42,8 @@
 	bottom:0;
 	text-align:center;
 	animation:
-		Appear 2s linear forwards,
-		Disappear 2s linear 7s forwards;
+		Appear 3s linear forwards,
+		Disappear 3s linear 5.5s forwards;
 }
 
 .elements-pics{

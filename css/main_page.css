@@ -17,9 +17,15 @@ body{
 	background:url(../pictures/intro/wallpaper2.jpg) no-repeat;
 }
 
+.paragraphs-font{
+	font-size:1.25rem;
+	font-family: 'Secular One', sans-serif;
+	color:#707d9d;
+}
+
 #main-page{
 	width:90%;
-	height:100%;
+	height:2400px;
 	display:none;
 	animation:ContentIn 4.5s linear forwards;
 	background: rgba(255, 255, 255, 0.21);
@@ -30,32 +36,53 @@ body{
 	border: 1px solid rgba(255, 255, 255, 0.46);
 	margin-right:auto;
 	margin-left:auto;
+	position:relative;
+	z-index:999;
 }
 
-.Intro{
+
+.mainpage-behind{
+	position:absolute;
+	opacity:0.22;
+}
+
+.air-position{
+	left:0;
+	top:0;
+}
+
+.water-position{
+	right:0;
+	top:600px;
+}
+
+.earth-position{
+	left:0;
+	top:1200px;
+}
+
+.fire-position{
+	right:0;
+	top:1800px;
+}
+
+/*INTRO SECTION*/
+
+.intro{
 	max-width:100%;
-	height:100%;
+	height:100vh;
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	position:relative;
+	z-index: 10000;
 }
 
-.Intro p{
-	font-size:1.25rem;
-	font-family: 'Secular One', sans-serif;
-	color:#707d9d;
+.intro p{
 	max-width:60ch;
 	padding-left:50px;
 	padding-right:50px;
 	text-align:center;
-}
-
-#katara{
-	transform:translateX(-1200px);
-}
-
-.katara-on{
-	animation:Katara 2s ease-out forwards;
 }
 
 /*ANIMATIONS*/
@@ -68,7 +95,7 @@ body{
 	}
 }
 
-@keyframes Katara{
+@keyframes slide-to-right{
 	0%{
 		transform:translateX(-1200px);
 	}
@@ -78,3 +105,24 @@ body{
 }
 
 /*MEDIA QUERIES*/
+@media only screen and (max-width: 600px){
+	.intro{
+		margin:100px 0;
+	}
+}
+@media only screen and (max-width:649px){
+	.mainpage-behind{
+		width:300px;
+		height:auto;
+	}
+}
+
+@media only screen and (max-width:1050px){
+	.intro{
+		flex-direction:column;
+	}
+
+	.intro p{
+		padding:0;
+	}
+}
