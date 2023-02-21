@@ -21,7 +21,6 @@
     height: 295px;
     display:flex;
     flex: 1;
-    cursor: pointer;
     position: relative;
     transition: flex 500ms ease-in-out;
   }

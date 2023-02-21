@@ -10,10 +10,12 @@
 
 html{
 	height: 100%;
+	width:100%;
 }
 
 body{
 	height: 100vh;
+	width:100%;
 	background:url(../pictures/intro/wallpaper2.webp) no-repeat;
 }
 
@@ -76,6 +78,7 @@ body{
 	align-items:center;
 	position:relative;
 	z-index: 10000;
+	margin-top:100px;
 }
 
 .intro p{
@@ -105,11 +108,6 @@ body{
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 600px){
-	.intro{
-		margin:100px 0;
-	}
-}
 @media only screen and (max-width:649px){
 	.mainpage-behind{
 		width:300px;
