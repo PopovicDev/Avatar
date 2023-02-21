@@ -271,11 +271,17 @@
 		background-position-x:-270px;
 		padding-left:0px;
 	}
-	h1{
+	.background2 h1{
 		font-size:3rem;
 	}
 	.elements-pics{
 		gap:0px;
+	}
+
+	:is(.earth img, .fire img, .air img, .water img){
+		height:auto;
+		width:75px;
+		opacity:0;
 	}
 }
 
@@ -283,19 +289,19 @@
 	.background2{
 		padding-left:0px;
 	}
-	h1{
+	.background2 h1{
 		font-size:3.5rem;
 	}
 }
 
 @media only screen and (min-width: 768px){
-	h1{
+	.background2 h1{
 		font-size:3.5rem;
 	}
 }
 
 @media only screen and (min-width: 992px){
-	h1{
+	.background2 h1{
 		font-size:4rem;
 	}
 }
