@@ -131,6 +131,12 @@
     }
   }
 
+  @media only screen and (min-width:453px){
+    .character{
+      margin:50px 0;
+    }
+  }
+
   @media only screen and (max-width: 600px){
     #main-characters{
       display:flex;
@@ -139,7 +145,6 @@
 
     .character{
       height:651px;
-      margin:20px 0;
     }
 
     .char-tribe h2{
@@ -452,5 +457,9 @@
   @media only screen and (min-width: 1627px){
     .char-tribe h2{
       font-size:1.4rem;
+    }
+
+    .character{
+      max-width:650px;
     }
   }

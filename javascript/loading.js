@@ -6,4 +6,4 @@ setTimeout(() => {
 	main_page.style.display = 'block';
 	header_page.style.display = 'flex';
 	loading_screen.style.display = 'none';
-}, 8300);
+}, 7000);

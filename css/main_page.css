@@ -114,6 +114,13 @@ body{
 	}
 }
 
+@media only screen and (min-width:649px){
+	.mainpage-behind{
+		width:450px;
+		height:auto;
+	}
+}
+
 @media only screen and (max-width:1050px){
 	.intro{
 		flex-direction:column;
@@ -121,5 +128,12 @@ body{
 
 	.intro p{
 		padding:0;
+	}
+}
+
+@media only screen and (min-width:1050px){
+	.mainpage-behind{
+		width:600px;
+		height:auto;
 	}
 }

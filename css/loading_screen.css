@@ -22,7 +22,7 @@
 	text-align:center;
 	position:fixed;
 	animation:
-		Disappear 2s linear 6.5s forwards;
+		Disappear 2s linear 5.5s forwards;
 }
 
 .background2{
@@ -43,7 +43,7 @@
 	text-align:center;
 	animation:
 		Appear 3s linear forwards,
-		Disappear 3s linear 5.5s forwards;
+		Disappear 3s linear 4.5s forwards;
 }
 
 .elements-pics{
@@ -52,7 +52,7 @@
 	gap:30px;
 	animation:
 		dropIn 1.5s ease-in-out forwards,
-		dropOut 0.75s linear 7s forwards;
+		dropOut 0.75s linear 6s forwards;
 }
 
 .background2 h1{
@@ -69,7 +69,7 @@
 	-webkit-background-clip:text;
 	letter-spacing:5px;
 	animation:
-		dropIn 1.5s ease-in-out forwards,
+		Appear 200ms ease-in-out forwards,
 		TextMove 8s linear infinite,
 		Disappear 2s linear 7s forwards;
 }
@@ -191,7 +191,6 @@
 		opacity:0.25;
 	}
 	100%{
-		transform:translateY(-350px);
 		opacity:0;
 	}
 }
