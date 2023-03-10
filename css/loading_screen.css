@@ -14,7 +14,7 @@
 }
 
 .background1{
-	background-image:url('../pictures/bg6.webp');
+	background-color:aqua;
 	background-repeat:no-repeat;
 	height:100vh;
 	width:100%;
@@ -33,7 +33,7 @@
 	padding-left:600px;
 	height:100vh;
 	width:100%;
-	background-image:url('../pictures/bg7.webp');
+	background-color:aqua;
 	background-repeat:no-repeat;
 	position:fixed;
 	top:0;
