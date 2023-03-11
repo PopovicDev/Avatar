@@ -68,8 +68,6 @@
 	background-clip:text;
 	-webkit-background-clip:text;
 	letter-spacing:5px;
-	animation:
-		TextMove 8s linear infinite;
 }
 
 :is(.earth img, .fire img, .air img, .water img){
