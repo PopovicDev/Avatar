@@ -21,6 +21,8 @@
 	display:flex;
 	text-align:center;
 	position:fixed;
+	animation:
+		Disappear 2s linear 5.5s forwards;
 }
 
 .background2{
@@ -45,9 +47,6 @@
 	display:flex;
 	flex-direction:row;
 	gap:30px;
-	animation:
-		dropIn 1.5s ease-in-out forwards,
-		dropOut 0.75s linear 6s forwards;
 }
 
 .background2 h1{
@@ -68,31 +67,7 @@
 :is(.earth img, .fire img, .air img, .water img){
 	height:auto;
 	width:100px;
-	opacity:0;
-}
-
-.earth img{
-	animation:
-		earthDropIn 2s ease-out 1.5s forwards,
-		earthDropOut 2s linear 5.5s forwards;
-}
-
-.fire img{
-	animation:
-		fireDropIn 2s ease-out 1.75s forwards,
-		fireDropOut 2s linear 5s forwards;
-}
-
-.air img{
-	animation:
-		airDropIn 2s ease-out 2s forwards,
-		airDropOut 2s linear 4.5s forwards;
-}
-
-.water img{
-	animation:
-		waterDropIn 2s ease-out 2.25s forwards,
-		waterDropOut 2s linear 4s forwards;
+	opacity:1;
 }
 
 /*ANIMATIONS*/
