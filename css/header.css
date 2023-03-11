@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
 #header{
 	display:none;
 	align-items:center;
@@ -120,38 +118,6 @@ nav{
 	display: none;
 }
 
-/*ANIMATIONS*/
-@keyframes ContentIn{
-	0%{
-		opacity:0;
-	}
-	50%{
-		opacity:1;
-	}
-}
-
-@keyframes SlideUp{
-	0%{
-		opacity:0;
-		transform:translateY(-15px);
-	}
-
-	100%{
-		opacity:1;
-		transform:none;
-	}
-}
-
-@keyframes SlideLeft{
-	0%{
-		opacity:0;
-		transform:translateX(15px);
-	}
-	100%{
-		opacity:1;
-		transform:none;
-	}
-}
 
 /*MEDIA QUERIES*/
 @media (max-width: 1024px){

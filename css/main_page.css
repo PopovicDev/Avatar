@@ -85,25 +85,6 @@ body{
 	text-align:center;
 }
 
-/*ANIMATIONS*/
-@keyframes ContentIn{
-	0%{
-		opacity:0;
-	}
-	50%{
-		opacity:1;
-	}
-}
-
-@keyframes slide-to-right{
-	0%{
-		transform:translateX(-1200px);
-	}
-	100%{
-		transform:translateX(0px);
-	}
-}
-
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 453px){
 	#main-page{
