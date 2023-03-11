@@ -69,9 +69,7 @@
 	-webkit-background-clip:text;
 	letter-spacing:5px;
 	animation:
-		Appear 200ms ease-in-out forwards,
-		TextMove 8s linear infinite,
-		Disappear 2s linear 7s forwards;
+		TextMove 8s linear infinite;
 }
 
 :is(.earth img, .fire img, .air img, .water img){
