@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
 #main-characters{
     width: 90%;
     height: 295px;
@@ -141,6 +138,7 @@
     #main-characters{
       display:flex;
       flex-direction:column;
+      margin-top:50px;
     }
 
     .character{
@@ -363,6 +361,7 @@
       justify-content:space-between;
       width:90%;
       height:300px;
+      margin-top:100px;
     }
 
     .character{

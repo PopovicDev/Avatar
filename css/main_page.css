@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-
 *,
 *:before,
 *:after{
@@ -9,14 +7,14 @@
 }
 
 html{
-	height: 100%;
+	height:100%;
 	width:100%;
 }
 
 body{
 	height: 100vh;
 	width:100%;
-	background:url(../pictures/intro/wallpaper2.webp) no-repeat;
+	background:url(../pictures/intro/wallpaper2.webp) no-repeat fixed;
 }
 
 .paragraphs-font{
@@ -26,9 +24,9 @@ body{
 }
 
 #main-page{
-	width:90%;
-	height:2400px;
 	display:none;
+	width:90%;
+	min-height:100%;
 	animation:ContentIn 4.5s linear forwards;
 	background: rgba(255, 255, 255, 0.21);
 	border-radius: 16px;
@@ -107,6 +105,28 @@ body{
 }
 
 /*MEDIA QUERIES*/
+@media only screen and (max-width: 453px){
+	#main-page{
+		min-height:calc(100% + 2500px);
+	}
+}
+
+@media only screen and (min-width:453px){
+	#main-page{
+		min-height:calc(100% + 3200px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+	#main-page{
+		min-height:calc(100% + 2900px);
+	}
+}
+
 @media only screen and (max-width:649px){
 	.mainpage-behind{
 		width:300px;
@@ -118,6 +138,20 @@ body{
 	.mainpage-behind{
 		width:450px;
 		height:auto;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	#main-page{
+		min-height:calc(100% + 3100px);
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	#main-page{
+		min-height:calc(100% + 3350px);
 	}
 }
 
@@ -135,5 +169,11 @@ body{
 	.mainpage-behind{
 		width:600px;
 		height:auto;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#main-page{
+		min-height:100%;
 	}
 }
