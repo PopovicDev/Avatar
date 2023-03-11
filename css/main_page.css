@@ -28,7 +28,8 @@ body{
 #main-page{
 	width:90%;
 	height:2400px;
-	display:block;
+	display:none;
+	animation:ContentIn 4.5s linear forwards;
 	background: rgba(255, 255, 255, 0.21);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -93,6 +94,15 @@ body{
 	}
 	50%{
 		opacity:1;
+	}
+}
+
+@keyframes slide-to-right{
+	0%{
+		transform:translateX(-1200px);
+	}
+	100%{
+		transform:translateX(0px);
 	}
 }
 

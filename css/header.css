@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 #header{
-	display:flex;
+	display:none;
 	align-items:center;
 	justify-content:space-between;
 	padding:5px 50px;
 	height:60px;
 	background:url(../pictures/header_pic.webp);
 	background-position:center 1020px;
+	animation:ContentIn 4.5s linear forwards;
 	position:fixed;
 	top:0;
 	z-index:99999;

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+#world-map{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:auto;
+    position:relative;
+    margin-bottom:100px;
+}
+
+#world-map-map{
+    display:block;
+    height:762px;
+    text-align:center;
+    position:relative;
+}
+
+#world-map-intro h1{
+    max-width:20ch;
+    font-size:1.9rem;
+    font-family: 'Acme', sans-serif;
+    color:#707d9d;
+}
+
+#picture{
+    max-width:100%;
+    height:auto;
+    text-align:center;
+    position:relative;
+}
+
+:is(#check1, #check2, #check3, #check4, #check5, #check6, #check7, #check8, #check9){
+    display:none;
+}
+
+:is(#AirOne, #AirTwo, #AirThree, #WaterOne, #WaterTwo, #Earth, #Fire){
+    display:none;
+    position:absolute;
+    width:30ch;
+    height:auto;
+    background-color:white;
+    border:1px solid black;
+    border-radius:5px;
+    text-align:left;
+    padding-left:5px;
+}
+
+#AirOne{
+    top:280px;
+    left:0px;
+}
+
+#AirTwo{
+    top:453px;
+    right:0px;
+}
+
+#AirThree{
+    top:453px;
+    left:100px;
+}
+
+#WaterOne{
+    top:180px;
+    left:570px;
+}
+
+#WaterTwo{
+    bottom:0px;
+    left:570px;
+}
+
+#Earth{
+    top:350px;
+    right:150px;
+}
+
+#Fire{
+    top:433px;
+    left:20px;
+}
+
+@media only screen and (min-width:1200px){
+    #position1-air{
+        cursor:pointer;
+        position:absolute;
+        height:80px;
+        width:140px;
+        top:240px;
+        left:230px;
+    }
+    
+    #position2-air{
+        cursor:pointer;
+        position:absolute;
+        height:100px;
+        width:60px;
+        top:420px;
+        right:220px;
+    }
+    
+    #position3-air{
+        cursor:pointer;
+        position:absolute;
+        height:90px;
+        width:200px;
+        top:470px;
+        left:340px;
+    }
+    
+    #position4-water{
+        cursor:pointer;
+        position:absolute;
+        height:70px;
+        width:130px;
+        top:150px;
+        left:430px;
+    }
+    
+    #position5-water{
+        cursor:pointer;
+        position:absolute;
+        height:90px;
+        width:170px;
+        bottom:110px;
+        left:400px;
+    }
+    
+    #position6-earth1{
+        cursor:pointer;
+        position:absolute;
+        height:350px;
+        width:200px;
+        top:200px;
+        right:280px;
+    }
+    
+    #position6-earth2{
+        cursor:pointer;
+        position:absolute;
+        height:130px;
+        width:340px;
+        top:290px;
+        right:200px;
+    }
+    
+    #position6-earth3{
+        cursor:pointer;
+        position:absolute;
+        height:120px;
+        width:200px;
+        top:220px;
+        left:360px;
+    }
+    
+    #position7-fire{
+        cursor:pointer;
+        position:absolute;
+        height:110px;
+        width:240px;
+        top:350px;
+        left:210px;
+    }
+}

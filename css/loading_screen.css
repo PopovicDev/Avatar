@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family:RedHands;
+	src: url(../fonts/KGRedHands.ttf);
+}
+
+.background1{
+	background-image:url('../pictures/bg6.webp');
+	background-repeat:no-repeat;
+	height:100vh;
+	width:100%;
+	display:flex;
+	text-align:center;
+	position:fixed;
+	animation:
+		Disappear 2s linear 5.5s forwards;
+}
+
+.background2{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding-left:600px;
+	height:100vh;
+	width:100%;
+	background-image:url('../pictures/bg7.webp');
+	background-repeat:no-repeat;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align:center;
+	animation:
+		Appear 3s linear forwards,
+		Disappear 3s linear 4.5s forwards;
+}
+
+.elements-pics{
+	display:flex;
+	flex-direction:row;
+	gap:30px;
+	animation:
+		dropIn 1.5s ease-in-out forwards,
+		dropOut 0.75s linear 6s forwards;
+}
+
+.background2 h1{
+	font-family: 'Righteous', cursive;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 4.5rem;
+	font-weight:100;
+	color:transparent;
+	-webkit-text-stroke:1px #ffffff;
+	background-image:url('../pictures/text-bg.webp');
+	background-size:fill;
+	background-clip:text;
+	-webkit-background-clip:text;
+	letter-spacing:5px;
+	animation:
+		Appear 200ms ease-in-out forwards,
+		TextMove 8s linear infinite,
+		Disappear 2s linear 7s forwards;
+}
+
+:is(.earth img, .fire img, .air img, .water img){
+	height:auto;
+	width:100px;
+	opacity:0;
+}
+
+.earth img{
+	animation:
+		earthDropIn 2s ease-out 1.5s forwards,
+		earthDropOut 2s linear 5.5s forwards;
+}
+
+.fire img{
+	animation:
+		fireDropIn 2s ease-out 1.75s forwards,
+		fireDropOut 2s linear 5s forwards;
+}
+
+.air img{
+	animation:
+		airDropIn 2s ease-out 2s forwards,
+		airDropOut 2s linear 4.5s forwards;
+}
+
+.water img{
+	animation:
+		waterDropIn 2s ease-out 2.25s forwards,
+		waterDropOut 2s linear 4s forwards;
+}
+
+/*ANIMATIONS*/
+
+@keyframes Appear{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes TextMove{
+	100%{
+		background-position:2000px 0px;
+	}
+}
+
+@keyframes dropIn{
+	0%{
+		transform:translateY(-650px);
+	}
+	100%{
+		transform:translateY(0px);
+	}
+}
+
+
+@keyframes earthDropIn{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes fireDropIn{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes airDropIn{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes waterDropIn{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+@keyframes dropOut{
+	0%{
+		transform:translateY(0px);
+	}
+	75%{
+		opacity:0.25;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+
+@keyframes earthDropOut{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes fireDropOut{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes airDropOut{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes waterDropOut{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+
+@keyframes Disappear{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	90%{
+		opacity:0.01;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px){
+	.background1{
+		background-position-x:-270px;
+	}
+	.background2{
+		background-position-x:-270px;
+		padding-left:0px;
+	}
+	.background2 h1{
+		font-size:3rem;
+	}
+	.elements-pics{
+		gap:0px;
+	}
+
+	:is(.earth img, .fire img, .air img, .water img){
+		height:auto;
+		width:75px;
+		opacity:0;
+	}
+}
+
+@media only screen and (min-width: 600px){
+	.background2{
+		padding-left:0px;
+	}
+	.background2 h1{
+		font-size:3.5rem;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.background2 h1{
+		font-size:3.5rem;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.background2 h1{
+		font-size:4rem;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.background2{
+		padding-left:600px;
+	}
+}
