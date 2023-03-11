@@ -21,8 +21,6 @@
 	display:flex;
 	text-align:center;
 	position:fixed;
-	animation:
-		Disappear 2s linear 5.5s forwards;
 }
 
 .background2{
@@ -41,9 +39,6 @@
 	right:0;
 	bottom:0;
 	text-align:center;
-	animation:
-		Appear 3s linear forwards,
-		Disappear 3s linear 4.5s forwards;
 }
 
 .elements-pics{
