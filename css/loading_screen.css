@@ -61,10 +61,16 @@
 	font-style:normal;
 	font-size: 4.5rem;
 	font-weight:100;
+	color:transparent;
 	-webkit-text-stroke:1px #ffffff;
+	background-image:url('../pictures/text-bg.webp');
+	background-size:fill;
+	background-clip:text;
+	-webkit-background-clip:text;
 	letter-spacing:5px;
 	animation:
 		Appear 200ms ease-in-out forwards,
+		TextMove 8s linear infinite,
 		Disappear 2s linear 7s forwards;
 }
 
