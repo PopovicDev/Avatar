@@ -44,8 +44,7 @@ body{
 
 .background2 h1{
 	font-family: 'Secular One', sans-serif;
-	font-weight:normal;
-	font-style:normal;
+	font-display:swap;
 	font-size: 4.5rem;
 	font-weight:100;
 	color:transparent;

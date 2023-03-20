@@ -17,6 +17,7 @@
     max-width:20ch;
     font-size:1.9rem;
     font-family: 'Acme', sans-serif;
+    font-display:swap;
     color:#707d9d;
 }
 
@@ -33,17 +34,20 @@
     text-align:center;
 }
 
+:is(.world-map-intro h2, .world-map-intro h1, .hr-text, .tribes h2){
+    font-family: 'Secular One', sans-serif;
+    font-display:swap;
+}
+
 .world-map-intro h2{
     display:none;
     color:#707d9d;
-    font-family: 'Secular One', sans-serif;
     font-weight:400;
     margin-top:5px;
 }
 
 .world-map-intro h1{
     color:#707d9d;
-    font-family: 'Secular One', sans-serif;
     font-weight:400;
     margin-top:5px;
     position:relative;
@@ -51,7 +55,6 @@
 
 .hr-text {
     display:block;
-    font-family: 'Secular One', sans-serif;
     font-weight:400;
     font-size: 20px;
     position: relative;
@@ -114,7 +117,6 @@
 .tribes h2{
     padding-right:5px;
     color:white;
-    font-family: 'Secular One', sans-serif;
     font-weight:400;
 }
 

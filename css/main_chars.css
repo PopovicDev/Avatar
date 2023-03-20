@@ -53,9 +53,13 @@
     opacity:1;
   }
 
+  :is(.column p, .char-tribe h2, .char-readmore a){
+    font-family: 'Secular One', sans-serif;
+    font-display:swap;
+  }
+
   .column p{
     font-size:0.94rem;
-	  font-family: 'Secular One', sans-serif;
 	  color:#707d9d;
     opacity: 0;
     transition: opacity 200ms ease-in-out;
@@ -65,7 +69,6 @@
   
   .char-tribe h2 {
     color:#707d9d;
-    font-family: 'Secular One', sans-serif;
     opacity: 0;
     transition: opacity 500ms ease-in-out;
     padding-right:5px;
@@ -98,7 +101,6 @@
     font-size:1rem;
     font-weight:700;
     letter-spacing:2px;
-    font-family: 'Secular One', sans-serif;
     text-decoration:none;
     color:white;
   }
