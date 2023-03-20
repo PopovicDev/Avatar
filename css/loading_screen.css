@@ -6,31 +6,30 @@
 	box-sizing: border-box;
 }
 
+body{
+	background:url(/pictures/intro/wallpaper2.webp) no-repeat fixed;
+}
+
 .background1{
-	background-image:url('../pictures/bg6.webp');
-	background-repeat:no-repeat;
-	height:100vh;
+	background:url('../pictures/bg6.webp') no-repeat fixed;
+	height:100%;
 	width:100%;
 	display:flex;
-	text-align:center;
 	position:fixed;
 }
 
 .background2{
+	background:url('../pictures/bg7.webp') no-repeat fixed;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	padding-left:600px;
-	height:100vh;
+	height:100%;
 	width:100%;
-	background-image:url('../pictures/bg7.webp');
-	background-repeat:no-repeat;
 	position:fixed;
 	top:0;
 	left:0;
 	right:0;
-	bottom:0;
 	text-align:center;
 	animation:
 		Appear 1.5s linear forwards,
@@ -41,12 +40,10 @@
 	display:flex;
 	flex-direction:row;
 	gap:30px;
-	animation:
-		dropIn 1s linear forwards;
 }
 
 .background2 h1{
-	font-family: 'Righteous', cursive;
+	font-family: 'Secular One', sans-serif;
 	font-weight:normal;
 	font-style:normal;
 	font-size: 4.5rem;
@@ -91,10 +88,13 @@
 @media only screen and (max-width: 600px){
 	.background1{
 		background-position-x:-270px;
+		display:none;
 	}
 	.background2{
 		background-position-x:-270px;
 		padding-left:0px;
+		display:flex;
+		animation:none;
 	}
 	.background2 h1{
 		font-size:3rem;
@@ -106,7 +106,8 @@
 	:is(.earth img, .fire img, .air img, .water img){
 		height:auto;
 		width:75px;
-		opacity:0;
+		opacity:1;
+		animation:none;
 	}
 }
 

@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="css/loading_screen.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/header.css" defer>
-	<link rel="stylesheet" href="css/loading_screen.css">
-	<link rel="stylesheet" href="css/main_page.css" defer>
-	<link rel="stylesheet" href="css/world_map.css" defer>
-	<link rel="stylesheet" href="css/main_chars.css" defer>
+	<link rel="stylesheet" href="css/header.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/main_page.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/world_map.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/main_chars.css" media="print" onload="this.media='all'">
 	<title>Avatar: The Last Airbender</title>
 </head>
 <body>
@@ -23,16 +23,16 @@
 			<h1>AVATAR:<br>THE LAST AIRBENDER</h1>
 			<div class="elements-pics">
 				<div class="earth">
-					<img src="pictures/earth.webp" alt="" loading="lazy" width="300" height="300">
+					<img src="pictures/earth.webp" alt="earth-pic" width="300" height="300">
 				</div>
 				<div class="fire">
-					<img src="pictures/fire.webp" alt="" loading="lazy" width="300" height="300">
+					<img src="pictures/fire.webp" alt="fire-pic" width="300" height="300">
 				</div>
 				<div class="air">
-					<img src="pictures/air.webp" alt="" loading="lazy" width="300" height="300">
+					<img src="pictures/air.webp" alt="air-pic" width="300" height="300">
 				</div>
 				<div class="water">
-					<img src="pictures/water.webp" alt="" loading="lazy" width="300" height="300">
+					<img src="pictures/water.webp" alt="water-pic" width="300" height="300">
 				</div>
 			</div>
 		</div>
@@ -106,23 +106,23 @@
 			<div id="world-map-map">
 				<img src="./pictures/world_map/default-world-map.webp" alt="" id="picture" loading="lazy">
 				<input type="checkbox" id="check1">
-				<label for="check1" id="position1-air" onmouseover="Vazduh1()"></label>
+				<label for="check1" id="position1-air" onmouseover="Vazduh1()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check2">
-				<label for="check2" id="position2-air" onmouseover="Vazduh2()"></label>
+				<label for="check2" id="position2-air" onmouseover="Vazduh2()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check3">
-				<label for="check3" id="position3-air" onmouseover="Vazduh3()"></label>
+				<label for="check3" id="position3-air" onmouseover="Vazduh3()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check4">
-				<label for="check4" id="position4-water" onmouseover="Water1()"></label>
+				<label for="check4" id="position4-water" onmouseover="Water1()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check5">
-				<label for="check5" id="position5-water" onmouseover="Water2()"></label>
+				<label for="check5" id="position5-water" onmouseover="Water2()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check6">
-				<label for="check6" id="position6-earth1" onmouseover="Earth()"></label>
+				<label for="check6" id="position6-earth1" onmouseover="Earth()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check7">
-				<label for="check7" id="position6-earth2" onmouseover="Earth()"></label>
+				<label for="check7" id="position6-earth2" onmouseover="Earth()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check8">
-				<label for="check8" id="position6-earth3" onmouseover="Earth()"></label>
+				<label for="check8" id="position6-earth3" onmouseover="Earth()" onmouseout="Default()"></label>
 				<input type="checkbox" id="check9">
-				<label for="check9" id="position7-fire" onmouseover="Fire()"></label>
+				<label for="check9" id="position7-fire" onmouseover="Fire()" onmouseout="Default()"></label>
 				<div id="AirOne">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem error natus nulla fugiat illum quia praesentium cumque cupiditate accusamus? Vel dolor natus et qui maxime necessitatibus cumque incidunt, iusto facilis?
 					</p>
@@ -252,9 +252,9 @@
 			</div>
 		</section>
 	</main>
-	<script src="javascript/main_chars.js" type=text/javascript defer></script>
-	<script src="javascript/loading.js" type="text/javascript" async></script>
-	<script src="javascript/world_map.js" type="text/javascript" defer></script>
-	<script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous" defer></script>
+	<script src="javascript/main_chars.js" type=text/javascript></script>
+	<script src="javascript/loading.js" type="text/javascript"></script>
+	<script src="javascript/world_map.js" type="text/javascript"></script>
+	<script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>
