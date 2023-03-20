@@ -40,9 +40,6 @@ function Earth(){
 function Fire(){
     picture.src="./pictures/world_map/fire-world-map.webp";
 }
-function Default(){
-    picture.src="./pictures/world_map/default-world-map.webp";
-}
 window.addEventListener('click', function(e){
     switch(true){
         case (checks[0].contains(e.target) || texts[0].contains(e.target)):
