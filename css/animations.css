@@ -90,3 +90,12 @@
 		opacity:0;
 	}
 }
+
+@keyframes Scroll{
+	0%{
+		transform:translateX(0);
+	}
+	100%{
+		transform:translateX(calc(-250px * 18));
+	}
+}

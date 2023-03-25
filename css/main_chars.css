@@ -1,6 +1,6 @@
 #main-characters{
     width: 90%;
-    height: 295px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,6 +108,10 @@
   /*MEDIA QUERIES*/
 
   @media only screen and (max-width: 453px){
+    .character{
+      margin-bottom:50px;
+    }
+
     .column{
       flex-direction:column;
     }

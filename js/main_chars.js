@@ -5,9 +5,9 @@ function DeleteAll() {
     panels.forEach(panel => {
         panel.classList.remove("active");
     })
-}
+};
 
-window.addEventListener('mouseup', function(e){
+window.addEventListener("mouseup", function(e){
     if(document.getElementById('main-characters').contains(e.target)){
         panels.forEach(panel => {
             panel.addEventListener("click", function() {
@@ -19,4 +19,4 @@ window.addEventListener('mouseup', function(e){
     else{
         DeleteAll();
     }
-})
+});
