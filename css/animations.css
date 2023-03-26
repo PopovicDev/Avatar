@@ -1,3 +1,9 @@
+@keyframes vanish{
+	100%{
+		opacity:0;
+	}
+}
+
 @keyframes ContentIn{
 	0%{
 		opacity:0;
@@ -39,55 +45,6 @@
 	}
 	100%{
 		opacity:1;
-	}
-}
-
-@keyframes dropIn{
-	0%{
-		transform:translateY(-650px);
-	}
-	100%{
-		transform:translateY(0px);
-	}
-}
-
-@keyframes element_in{
-    0%{
-        opacity:0;
-    }
-    50%{
-        opacity:0.9;
-    }
-    100%{
-        opacity:1;
-    }
-}
-
-
-@keyframes dropOut{
-	0%{
-		transform:translateY(0px);
-	}
-	75%{
-		opacity:0.25;
-	}
-	100%{
-		opacity:0;
-	}
-}
-
-@keyframes Disappear{
-	0%{
-		opacity:1;
-	}
-	50%{
-		opacity:0.2;
-	}
-	90%{
-		opacity:0.01;
-	}
-	100%{
-		opacity:0;
 	}
 }
 

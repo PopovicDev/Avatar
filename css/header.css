@@ -6,10 +6,9 @@
 	height:60px;
 	background:url(../pictures/header_pic.webp);
 	background-position:center 1020px;
-	animation:ContentIn 4.5s linear forwards;
 	position:fixed;
 	top:0;
-	z-index:99999;
+	z-index:20000;
 	width:100%;
 }
 

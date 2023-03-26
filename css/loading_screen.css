@@ -1,59 +1,43 @@
-*,
-*:before,
-*:after{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body{
-	background:url(../pictures/intro/wallpaper2.webp) no-repeat fixed;
-}
-
-.background1{
-	background:url('../pictures/bg6.webp') no-repeat fixed;
+#loading-page{
+	background-color:#2b3f57;
 	height:100%;
 	width:100%;
-	display:flex;
-	position:fixed;
-}
-
-.background2{
-	background:url('../pictures/bg7.webp') no-repeat fixed;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	height:100%;
-	width:100%;
 	position:fixed;
 	top:0;
 	left:0;
 	right:0;
 	text-align:center;
+	z-index:99999;
+}
+
+#loading-page h1{
+	font-family: 'Secular One', sans-serif;
+	font-display:swap;
+	font-size: 4.5rem;
+	font-weight:100;
+	color:white;
+	letter-spacing:5px;
 	animation:
-		Appear 1.5s linear forwards,
-		Disappear 1s linear 6s forwards;
+	Appear 1.5s linear forwards;
+}
+
+#avatar-loading{
+	max-width:100%;
+	height:auto;
+}
+
+.disappear{
+	animation:vanish 1.5s forwards;
 }
 
 .elements-pics{
 	display:flex;
 	flex-direction:row;
 	gap:30px;
-}
-
-.background2 h1{
-	font-family: 'Secular One', sans-serif;
-	font-display:swap;
-	font-size: 4.5rem;
-	font-weight:100;
-	color:transparent;
-	-webkit-text-stroke:1px #ffffff;
-	background-image:url('../pictures/text-bg.webp');
-	background-size:fill;
-	background-clip:text;
-	-webkit-background-clip:text;
-	letter-spacing:5px;
 }
 
 :is(.earth img, .fire img, .air img, .water img){
@@ -64,42 +48,39 @@ body{
 
 .earth img{
 	animation:
-		element_in 2s ease-out 1.5s forwards;
+		Appear 2s ease-out 1.25s forwards;
 }
 
 .fire img{
 	animation:
-		element_in 2s ease-out 1.75s forwards;
+		Appear 2s ease-out 1.50s forwards;
 }
 
 .air img{
 	animation:
-		element_in 2s ease-out 2s forwards;
+		Appear 2s ease-out 1.75s forwards;
 }
 
 .water img{
 	animation:
-		element_in 2s ease-out 2.25s forwards;
+		Appear 2s ease-out 2s forwards;
 }
 
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 600px){
-	.background1{
-		background-position-x:-270px;
-		display:none;
-	}
-	.background2{
-		background-position-x:-270px;
-		padding-left:0px;
+	#loading-page{
 		display:flex;
 		animation:none;
 	}
-	.background2 h1{
+	#loading-page h1{
 		font-size:3rem;
+		line-height:45px;
+		animation:none;
 	}
 	.elements-pics{
-		gap:0px;
+		display:flex;
+		gap:0;
 	}
 
 	:is(.earth img, .fire img, .air img, .water img){
@@ -111,28 +92,19 @@ body{
 }
 
 @media only screen and (min-width: 600px){
-	.background2{
-		padding-left:0px;
-	}
-	.background2 h1{
+	#loading-page h1{
 		font-size:3.5rem;
 	}
 }
 
 @media only screen and (min-width: 768px){
-	.background2 h1{
+	#loading-page h1{
 		font-size:3.5rem;
 	}
 }
 
 @media only screen and (min-width: 992px){
-	.background2 h1{
+	#loading-page h1{
 		font-size:4rem;
-	}
-}
-
-@media only screen and (min-width: 1200px){
-	.background2{
-		padding-left:600px;
 	}
 }
