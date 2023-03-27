@@ -1,9 +1,1 @@
-window.onscroll = function(){
-	var button = document.getElementById('top');
-	if(window.pageYOffset > 50){
-		button.classList.add("go-top");
-	}
-	else{
-		button.classList.remove("go-top");
-	}
-}
+window.onscroll=function(){var o=document.getElementById("top");50<window.pageYOffset?o.classList.add("go-top"):o.classList.remove("go-top")};
