@@ -1,1 +1,10 @@
-const button=document.getElementById("top"),arrowLeft=document.getElementById("left"),arrowRight=document.getElementById("right"),carousel=document.getElementById("main-characters");window.onscroll=function(){50<window.pageYOffset?button.classList.add("go-top"):button.classList.remove("go-top")},arrowRight.onclick=()=>{carousel.scrollLeft+=500},arrowLeft.onclick=()=>{carousel.scrollLeft-=500};
+const button = document.getElementById('top');
+
+window.onscroll = function(){
+	if(window.pageYOffset > 50){
+		button.classList.add("go-top");
+	}
+	else{
+		button.classList.remove("go-top");
+	}
+}

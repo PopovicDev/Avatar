@@ -1,1 +1,0 @@
-const panels=document.querySelectorAll(".character");function DeleteAll(){panels.forEach(e=>{e.classList.remove("active")})}window.addEventListener("mouseup",function(e){document.getElementById("main-characters").contains(e.target)?panels.forEach(e=>{e.addEventListener("click",function(){DeleteAll(),e.classList.add("active")})}):DeleteAll()});
