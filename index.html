@@ -88,7 +88,7 @@
 <img src=./pictures/mainpage-water.webp alt="Water element" class="mainpage-behind water-position">
 <img src=./pictures/mainpage-earth.webp alt="Earth element" class="mainpage-behind earth-position">
 <img src=./pictures/mainpage-fire.webp alt="Fire element" class="mainpage-behind fire-position">
-<section class="intro paragraphs-font">
+<section class="intro paragraphs-font hidden">
 <img src=./pictures/intro/appa.webp alt=Appa width=266 height=232 id=appa>
 <p><b>Avatar: The Last Airbender</b> is set in a world consisting four nations, named after the four elements: the<b><a href=watertribe.html> Water Tribes</a></b>, the<b><a href=earthtribe.html> Earth Kingdom</a></b>, the<b><a href=firetribe.html> Fire Nation</a></b>, and the<b><a href=airtribe.html> Air Nomads</a></b>. In each nation, people known as <b>"benders"</b>, have the ability to telikinetically manipulate and control the element corresponding to their nation. The <b>"Avatar"</b> is the only individual with the ability to bend all four elements.</p>
 <img src=./pictures/intro/avatar.webp alt=Aang width=122 height=295 id=aang>
@@ -264,7 +264,7 @@
 <section class="world-map-intro chars-intro">
 <h2>Select one of the main characters to read more about them!</h2>
 </section>
-<section id=main-characters>
+<section id=main-characters class=hidden>
 <div class=character>
 <img src=./pictures/mainchars/aang.webp alt=Aang loading=lazy width=122 height=295>
 <div class=column>
@@ -328,17 +328,6 @@
 <button id=right aria-label="Next character."><i class="fa-solid fa-arrow-right"></i></button>
 </div>
 </div>
-<hr class=hr-text>
-<article class="layout-avatar avatars-duty">
-<h1 class=layout-header1>WHAT IS THE AVATAR'S DUTY?</h1>
-<div class=duty>
-<img src=pictures/korra.webp alt=Korra width=270 height=300 loading=lazy>
-<p class=paragraphs-font>
-<span style=font-size:2rem><b>The Avatar</b></span> is an international arbiter whose duty is to maintain harmony among the four nations, and act as a mediator between humans and spirits. When the Avatar dies, their spirit is reincarnated in a new body, who will be born to parents in the next nation in a set order known as the Avatar cycle: <b>Fire, Air, Water and Earth</b>. By tradition, the new Avatar will travel the world to learn all four bending arts, after which they will begin in earnest their role as global peacekeeper. The Avatar can enter a condition known as the <b>"Avatar State"</b>, in which they temporarily gain the skills and knowledge of all their past incarnations. Although this is when they are at their most powerful, if the Avatar was ever killed while in the Avatar State, the reincarnation cycle would be broken and the Avatar would cease to exist.
-</p>
-<img src=pictures/avatars.webp alt="Avatar generation" width=619 height=365 loading=lazy id=avatarz>
-</div>
-</article>
 <div class=slider>
 <div class=slide-track>
 <div class=slide><img src=pictures/slider/pic1.webp alt="Team Avatar" width=250 height=250></div>
@@ -379,7 +368,17 @@
 <div class=slide><img src=pictures/slider/pic18.webp alt="Team Avatar" width=250 height=250></div>
 </div>
 </div>
-<article class="the-beginning layout-avatar">
+<article class="layout-avatar avatars-duty hidden">
+<h1 class=layout-header1>WHAT IS THE AVATAR'S DUTY?</h1>
+<div class=duty>
+<img src=pictures/korra.webp alt=Korra width=270 height=300 loading=lazy>
+<p class=paragraphs-font>
+<span style=font-size:2rem><b>The Avatar</b></span> is an international arbiter whose duty is to maintain harmony among the four nations, and act as a mediator between humans and spirits. When the Avatar dies, their spirit is reincarnated in a new body, who will be born to parents in the next nation in a set order known as the Avatar cycle: <b>Fire, Air, Water and Earth</b>. By tradition, the new Avatar will travel the world to learn all four bending arts, after which they will begin in earnest their role as global peacekeeper. The Avatar can enter a condition known as the <b>"Avatar State"</b>, in which they temporarily gain the skills and knowledge of all their past incarnations. Although this is when they are at their most powerful, if the Avatar was ever killed while in the Avatar State, the reincarnation cycle would be broken and the Avatar would cease to exist.
+</p>
+<img src=pictures/avatars.webp alt="Avatar generation" width=619 height=365 loading=lazy id=avatarz>
+</div>
+</article>
+<article class="the-beginning layout-avatar hidden">
 <div style=display:flex>
 <img src=pictures/air_popin.webp alt="Air element" width=50 height=50 loading=lazy>
 <h1 class=layout-header1>THE BEGINNING</h1>
@@ -397,7 +396,7 @@ A century ago, young <b><a href=#>Avatar Aang</a></b>, afraid of his new respons
 </div>
 </div>
 </article>
-<article class="season-one layout-avatar">
+<article class="season-one layout-avatar hidden">
 <div style=display:flex>
 <img src=pictures/water_popin.webp alt="Water element" width=50 height=50 loading=lazy>
 <h1 class=layout-header1>SEASON ONE: WATER</h1>
@@ -425,7 +424,7 @@ Aang soon discovers that Sozin's Comet, which <b><a href=#>Fire Lord Sozin</a></
 </div>
 </div>
 </article>
-<article class="season-two layout-avatar">
+<article class="season-two layout-avatar hidden">
 <div style=display:flex>
 <img src=pictures/earth_popin.webp alt="Earth element" width=50 height=50 loading=lazy>
 <h1 class=layout-header1>SEASON TWO: EARTH</h1>
@@ -439,7 +438,7 @@ After leaving the <b>North Pole</b> and mastering waterbending, <b><a href=#>Aan
 <img src=pictures/earthbending.webp alt=Earthbending loading=lazy>
 </div>
 </article>
-<article class="season-three layout-avatar">
+<article class="season-three layout-avatar hidden">
 <div style=display:flex>
 <img src=pictures/fire_popin.webp alt="Fire element" width=50 height=50 loading=lazy>
 <h1 class=layout-header1>SEASON THREE: FIRE</h1>
@@ -460,11 +459,12 @@ On the day of Sozin's Comet, <b><a href=#>Fire Lord Ozai</a></b> harnesses the c
 </div>
 </article>
 </main>
+<script src=js/mainpage/loading.js type=text/javascript></script>
+<script defer src=js/slidein.js></script>
+<script defer src=js/mainpage/world_map.js type=text/javascript></script>
 <script>const panels=document.querySelectorAll(".character");function DeleteAll(){panels.forEach(panel=>{panel.classList.remove("active");})};window.addEventListener("mouseup",function(e){if(document.getElementById('main-characters').contains(e.target)){panels.forEach(panel=>{panel.addEventListener("click",function(){DeleteAll();panel.classList.add("active");})})}
 else{DeleteAll();}});const arrowLeft=document.getElementById('left');const arrowRight=document.getElementById('right');const carousel=document.getElementById('main-characters');arrowRight.onclick=()=>{carousel.scrollLeft+=500;}
 arrowLeft.onclick=()=>{carousel.scrollLeft-=500;};</script>
-<script src=js/mainpage/loading.js type=text/javascript></script>
-<script defer src=js/mainpage/world_map.js type=text/javascript></script>
 <script src=https://kit.fontawesome.com/ea3edf7906.js crossorigin=anonymous></script>
 <a href=# id=top aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
 <script defer src=js/gotop.js type=text/javascript></script>
