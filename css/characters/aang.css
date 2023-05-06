@@ -1,0 +1,64 @@
+body{
+    background-color:rgb(235, 221, 192);
+}
+
+.char-header-picture{
+    background:url(/pictures/characters/aangbg.webp) no-repeat;
+    width:800px;
+    height:200px;
+    border:3px solid var(--text-color);
+    border-radius:10px 70px 30px 100px;
+    margin-right:30px;
+	background-size:cover;
+	background-position-y:-75px;
+}
+
+.disappear{
+	animation:vanish 1.5s forwards;
+}
+
+@keyframes vanish{
+	100%{
+		opacity:0;
+	}
+}
+
+#loading-page{
+    height:100%;
+    width:100%;
+    background-color:rgb(235, 221, 192);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#loading-page img{
+    z-index:1;
+}
+
+#loading-page h1{
+    z-index:2;
+    position:absolute;
+    margin-top:370px;
+    color:white;
+    font-size:3rem;
+	font-family: 'Secular One', sans-serif;
+}
+
+.box{
+    position:absolute;
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    background-color:rgb(146, 103, 16);
+    animation:animacija 1s infinite;
+}
+
+@keyframes animacija{
+    0%{
+        transform:perspective(0px) translateZ(0px);
+    }
+    100%{
+        transform: translateZ(1px);
+    }
+}

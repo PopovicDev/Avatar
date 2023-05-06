@@ -1,0 +1,77 @@
+.char-header-picture{
+    background:url(../../pictures/characters/jetbg.webp) no-repeat;
+    width:800px;
+    height:200px;
+    border:3px solid rgb(6, 75, 6);
+    border-radius:10px 70px 30px 100px;
+    margin-right:30px;
+	background-size:cover;
+	background-position-y:-100px;
+}
+
+body{
+    background-color:var(--green);
+}
+
+.char-pic img{
+    max-width:100%;
+    height:auto;
+}
+
+.char-header h1{
+    color:gold;
+    letter-spacing: normal;
+}
+
+.char-header h2{
+    color:white;
+}
+
+.paragraphs-font{
+    color:var(--white);
+}
+
+#main-page{
+    overflow:hidden;
+}
+
+#loading-page{
+    height:100%;
+    width:100%;
+    background-color:var(--green);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#loading-page img{
+    z-index:1;
+    border-radius:50px;
+}
+
+#loading-page h1{
+    z-index:2;
+    position:absolute;
+    margin-top:370px;
+    color:white;
+    font-size:3rem;
+	font-family: 'Secular One', sans-serif;
+}
+
+.box{
+    position:absolute;
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    background-color:#003300;
+    animation:animacija 1s infinite;
+}
+
+@keyframes animacija{
+    0%{
+        transform:perspective(0px) translateZ(0px);
+    }
+    100%{
+        transform: translateZ(1px);
+    }
+}

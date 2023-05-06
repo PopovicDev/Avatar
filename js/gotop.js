@@ -1,1 +1,10 @@
-const button=document.getElementById("top");window.onscroll=function(){50<window.pageYOffset?button.classList.add("go-top"):button.classList.remove("go-top")};
+const button = document.getElementById('top');
+
+window.onscroll = function(){
+	if(window.pageYOffset > 50){
+		button.classList.add("go-top");
+	}
+	else{
+		button.classList.remove("go-top");
+	}
+}

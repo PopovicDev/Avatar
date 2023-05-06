@@ -1,0 +1,485 @@
+::selection{
+	background-color:#ffc89a;
+}
+
+:root{
+	--text-color:#707d9d;
+	--blue:#005aff;
+	--orange:orange;
+	--green:green;
+	--red:red;
+	--white:#ffffff;
+}
+
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height:100%;
+	width:100%;
+	scroll-behavior:smooth;
+}
+
+img{
+	user-zoom: none;  
+   	user-select: none;
+   	-moz-user-select: none;
+   	-webkit-user-drag: none;
+   	-webkit-user-select: none;
+   	-ms-user-select: none;
+}
+
+body{
+	height: 100vh;
+	width:100%;
+	background:url('../../pictures/intro/bg.webp') no-repeat fixed;
+	background-position:center;
+}
+
+.hidden{
+	opacity:0;
+	transition-property:opacity, transform;
+	transition-duration:2s;
+	transition-delay:300ms;
+	transform:translateY(-30px);
+	filter:blur(5px);
+}
+
+.hidden2{
+	opacity:0;
+	transition-property:opacity, transform;
+	transition-duration:1s;
+	transform:translateX(-100%);
+	filter:blur(5px);
+}
+
+.show{
+	opacity:1;
+	transform:translateY(0px);
+	filter:blur(0);
+}
+
+.show2{
+	opacity:1;
+	transform:translateX(0px);
+	filter:blur(0);
+}
+
+.paragraphs-font{
+	font-size:1.25rem;
+	font-family: 'Secular One', sans-serif;
+	color:var(--text-color);
+}
+
+.paragraphs-font a{
+	color:var(--orange);
+	font-weight:100;
+	text-decoration:none;
+	transition: background-color 0.2s;
+}
+
+.paragraphs-font a:hover{
+	background-color:rgba(0, 0, 0, 0.1);
+	border-radius:5px;
+}
+
+.slider{
+	height:150px;
+	position:relative;
+	width:100%;
+	display:grid;
+	place-items:center;
+	overflow:hidden;
+	margin-top:150px;
+	margin-bottom:250px;
+}
+
+.slide-track{
+	display:flex;
+	width:calc(250px*36);
+	animation:Scroll 40s linear infinite;
+}
+
+.slide{
+	height:150px;
+	width:250px;
+	display:flex;
+	align-items:center;
+}
+
+.slide img{
+	width:100%;
+}
+
+#main-page{
+	display:none;
+	width:90%;
+	background: rgba(255, 255, 255, 0.71);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.8px);
+	-webkit-backdrop-filter: blur(4.8px);
+	border: 1px solid rgba(255, 255, 255, 0.46);
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	z-index:999;
+}
+
+.go-top{
+	position:fixed;
+	width:50px;
+	height:50px;
+	background-color:rgb(76,95,213);
+	border-radius:50px;
+	bottom:30px;
+	right:40px;
+	text-decoration:none;
+	color:var(--white);
+	text-align:center;
+	line-height:50px;
+	z-index:10000;
+}
+
+.mainpage-behind{
+	position:absolute;
+	opacity:0.22;
+}
+
+.air-position{
+	left:0;
+	top:0;
+}
+
+.water-position{
+	right:0;
+	top:600px;
+}
+
+.earth-position{
+	left:0;
+	top:1200px;
+}
+
+.fire-position{
+	right:0;
+	top:1800px;
+}
+
+/*INTRO SECTION*/
+
+.intro{
+	max-width:100%;
+	height:1100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	z-index: 10000;
+}
+
+.intro p{
+	max-width:60ch;
+	padding-left:50px;
+	padding-right:50px;
+	text-align:center;
+}
+
+/*LAYOUT FOR SECTIONS*/
+.layout-avatar{
+	height:auto;
+	max-width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	z-index: 10000;
+}
+
+.layout-avatar h1{
+	text-align:center;
+}
+
+.small-layout{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.layout-column{
+	display:flex;
+	flex-direction:column;
+}
+
+.layout-row{
+	display:flex;
+	flex-direction:row;
+}
+
+.layout-header1{
+	font-family: 'Acme', sans-serif;
+	font-size:2rem;
+    font-display:swap;
+	margin-bottom:30px;
+	text-decoration-line:underline;
+	text-decoration-color:var(--orange);
+    color:var(--orange);
+}
+
+/*AVATARS-DUTY*/
+
+.avatars-duty{
+	margin-top:0px;
+	margin-bottom:270px;
+}
+
+.duty{
+	display:flex;
+	align-items:center;
+	gap:20px;
+}
+
+.duty img{
+	border-radius:10px;
+}
+
+.duty p{
+	max-width:60ch;
+	font-size:1.1rem;
+}
+
+.duty p b{
+	color:var(--orange);
+}
+
+#avatarz{
+	width:419px;
+	height:247px;
+}
+
+/*THE BEGINNING*/
+
+.young-aang{
+	float:left;
+	margin:0 15px 0 0;
+}
+
+.the-beginning{
+	max-width:100%;
+	margin-top:250px;
+	margin-bottom:270px;
+}
+
+.the-beginning img{
+	border-radius:10px;
+}
+
+.the-beginning > .small-layout{
+	gap:20px;
+}
+
+.the-beginning p{
+	margin-right:auto;
+	margin-left:auto;
+	max-width:70ch;
+	font-size:1.1rem;
+}
+
+/*SEASON 1*/
+.season-one{
+	margin-top:250px;
+	margin-bottom:270px;
+}
+
+.season-one > .small-layout{
+	gap:20px;
+}
+
+.pictures{
+	gap:20px;
+}
+
+.pictures div{
+	gap:70px;
+}
+
+.pictures img{
+	width:200px;
+	height:150px;
+	border-radius:10px;
+}
+
+.season-one p{
+	max-width:90ch;
+	font-size:1.1rem;
+}
+
+/*SEASON 2*/
+.season-two{
+	margin-top:250px;
+	margin-bottom:270px;
+}
+
+.season-two > .small-layout{
+	gap:20px;
+}
+
+.season-two img{
+	border-radius:10px;
+}
+
+.season-two p{
+	max-width:60ch;
+	font-size:1.1rem;
+}
+
+/*SEASON 3*/
+.season-three{
+	margin-top:250px;
+	margin-bottom:270px;
+}
+
+.season-three > .small-layout{
+	gap:20px;
+}
+
+.season-three img{
+	border-radius:10px;
+}
+
+.season-three p{
+	max-width:60ch;
+	font-size:1.1rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:649px){
+	:is(.mainpage-behind, .layout-avatar, #appa, #aang){
+		height:auto;
+	}
+	
+	.mainpage-behind{
+		width:300px;
+	}
+
+	#appa{
+		width:200px;
+	}
+
+	#aang{
+		width:100px;
+	}
+
+	.intro p{
+		max-width:35ch;
+	}
+}
+
+@media only screen and (min-width:649px){
+	.mainpage-behind{
+		width:450px;
+		height:auto;
+	}
+}
+
+@media only screen and (max-width:692px){
+	:is(#avatarz, #airz, #earthz, #firez){
+		max-width:100%;
+		height:auto;
+	}
+
+	.pictures div{
+		flex-direction:column;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.layout-avatar{
+		margin-top:100px;
+		margin-bottom:100px;
+	}
+}
+
+@media only screen and (max-width:1050px){
+	.intro{
+		flex-direction:column;
+	}
+
+	.intro p{
+		padding:0;
+	}
+
+	.pictures{
+		flex-direction:column;
+	}
+
+	.slider{
+		margin:0;
+		margin-bottom:150px;
+	}
+}
+
+@media only screen and (min-width:1050px){
+	.mainpage-behind{
+		width:600px;
+		height:auto;
+	}
+}
+
+@media only screen and (max-width:1550px){
+	.duty{
+		flex-direction:column;
+	}
+
+	.duty img{
+		height:365px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.the-beginning > .small-layout{
+		flex-direction:column;
+	}
+
+	.season-one > .small-layout{
+		flex-direction:column;
+	}
+
+	.pictures{
+		order:3;
+	}
+	
+	.layout-column{
+		flex-direction:row;
+	}
+
+	.pictures div{
+		gap:20px;
+	}
+
+	.season-two > .small-layout{
+		flex-direction:column;
+	}
+
+	.season-three > .small-layout{
+		flex-direction:column;
+	}
+}
+
+@media only screen and (min-width:1550px){
+	.duty img{
+		height:365px;
+		width:auto;
+	}
+
+	.season-three > .small-layout{
+		width:992px;
+		justify-content:space-between;
+	}
+}

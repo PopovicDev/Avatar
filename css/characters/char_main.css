@@ -1,0 +1,258 @@
+::selection{
+	background-color:#ffc89a;
+}
+
+:root{
+	--text-color:#707d9d;
+	--blue:#005aff;
+	--orange:orange;
+	--green:green;
+	--red:red;
+	--white:#ffffff;
+}
+
+*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height:100%;
+	width:100%;
+	scroll-behavior:smooth;
+}
+
+img{
+	user-zoom: none;  
+   	user-select: none;
+   	-moz-user-select: none;
+   	-webkit-user-drag: none;
+   	-webkit-user-select: none;
+   	-ms-user-select: none;
+}
+
+body{
+	height: 100vh;
+	width:100%;
+}
+
+.hidden{
+	opacity:0;
+	transition-property:opacity, transform;
+	transition-duration:1s;
+	transition-delay:300ms;
+	transform:translateY(-30px);
+	filter:blur(5px);
+}
+
+.hidden2{
+	opacity:0;
+	transition-property:opacity, transform;
+	transition-duration:1s;
+    transition-delay:700ms;
+	transform:translateX(-40px);
+	filter:blur(5px);
+}
+
+.hidden3{
+	opacity:0;
+	transition-property:opacity, transform;
+	transition-duration:1s;
+    transition-delay:500ms;
+	transform:translateX(40px);
+	filter:blur(5px);
+}
+
+.show{
+	opacity:1;
+	transform:translateY(0px);
+	filter:blur(0);
+}
+
+.show2{
+	opacity:1;
+	transform:translateX(0px);
+	filter:blur(0);
+}
+
+.paragraphs-font{
+	font-size:1.25rem;
+	font-family: 'Secular One', sans-serif;
+	color:var(--text-color);
+}
+
+.paragraphs-font a{
+	color:var(--orange);
+	font-weight:100;
+	text-decoration:none;
+	transition: background-color 0.2s;
+}
+
+.paragraphs-font a:hover{
+	background-color:rgba(0, 0, 0, 0.1);
+	border-radius:5px;
+}
+
+.small-layout{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.layout-column{
+	display:flex;
+	flex-direction:column;
+}
+
+.layout-row{
+	display:flex;
+	flex-direction:row;
+}
+
+.go-top{
+	position:fixed;
+	width:50px;
+	height:50px;
+	background-color:rgb(76,95,213);
+	border-radius:50px;
+	bottom:30px;
+	right:40px;
+	text-decoration:none;
+	color:var(--white);
+	text-align:center;
+	line-height:50px;
+	z-index:10000;
+}
+
+#main-page{
+	display:none;
+    justify-content:center;
+    align-items:center;
+	width:80%;
+    height:auto;
+	background: rgba(255, 255, 255, 0.31);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.8px);
+    border-radius:50px;
+	-webkit-backdrop-filter: blur(4.8px);
+	border: 1px solid rgba(255, 255, 255, 0.46);
+    margin-top:100px;
+	padding-top:50px;
+	padding-left:120px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	z-index:999;
+}
+
+article{
+	margin-bottom:150px;
+}
+
+#main-page .layout-column{
+    flex-basis:75%;
+}
+
+.layout-row{
+    justify-content:space-between;
+	align-items:center;
+}
+
+.char-pic{
+    flex-basis:20%;
+    position:relative;
+}
+
+.char-header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.char-header h1{
+    font-size:3.5rem;
+    letter-spacing:10px;
+	font-family: 'Secular One', sans-serif;
+    color:var(--blue);
+}
+
+.char-header h2{
+    font-size:1.5rem;
+	font-family: 'Secular One', sans-serif;
+    color:var(--orange);
+}
+
+.char-header-picture{
+    width:800px;
+    height:200px;
+    border:3px solid var(--text-color);
+    border-radius:10px 70px 30px 100px;
+    margin-right:30px;
+	background-size:cover;
+	background-position-y:-40px;
+}
+
+#character{
+    border-radius:100px 30px 30px 30px;
+}
+
+#picture{
+    width:100px;
+    height:100px;
+    z-index:2;
+}
+
+#main-page p{
+    max-width:90ch;
+    margin-top:20px;
+}
+
+@media only screen and (width<1668px){
+	article.layout-row{
+		flex-direction:column;
+	}
+
+	div.layout-row{
+		flex-direction:column;
+	}
+
+	.char-header-picture.hidden.show{
+		margin:0;
+	}
+
+	#main-page{
+		padding:0 20px;
+	}
+
+	.char-header{
+		text-align:center;
+	}
+}
+
+@media only screen and (width<1129px){
+	.char-header-picture.hidden.show{
+		width:600px;
+		background-position:center;
+	}
+
+	img{
+		max-width:100%;
+		height:auto;
+	}
+}
+
+@media only screen and (width<765px){
+	.char-header-picture.hidden.show{
+		width:400px;
+	}
+}
+
+@media only screen and (width<576px){
+	.char-header-picture.hidden.show{
+		width:250px;
+		height:50px;
+	}
+}

@@ -1,0 +1,236 @@
+#choose{
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+:is(#choose-nw, #choose-sw){
+    display:flex;
+    width:100%;
+    flex-basis:50%;
+    justify-content:center;
+    align-items:center;
+    background-color:#2b3f57;
+    transition:flex 300ms;
+    text-align:center;
+}
+
+#choose-nw{
+    background-image:linear-gradient(to bottom, rgba(0,0,0, 0.1), rgba(8,83,156, 0.65)), url('/pictures/tribes/water/north.webp');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+#choose-sw{
+    background-image:linear-gradient(to top,rgba(0,0,0, 0.1), rgba(8,83,156, 0.765)), url('/pictures/tribes/water/south.webp');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+:is(#choose-nw h1, #choose-sw h1){
+    font-family:Acme, sans-serif;
+    font-size:2rem;
+    color:var(--white);
+    transition:300ms;
+    cursor:pointer;
+}
+
+:is(#choose-nw:hover, #choose-sw:hover){
+    flex-basis:60%;
+}
+
+:is(#choose-nw h1:hover, #choose-sw h1:hover){
+    font-size:2.5rem;
+}
+
+#choose-line{
+	display:none;
+    height:3px;
+    border:none;
+    background-color:var(--white);
+}
+
+:is(#upper, #lower){
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:auto;
+    padding-top:100px;
+    gap:50px;
+}
+
+:is(#lower, #upper){
+    background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(8,83,156, 0.75)), url(/pictures/tribes/water/background.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+:is(#upper article, #lower article){
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    align-items:center;
+    width:65%;
+    height:auto;
+    background-color:rgba(43,63,87, 0.6);
+    padding:10px;
+    padding-bottom:50px;
+    overflow:hidden;
+    border-bottom:3px solid var(--blue);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.line-in{
+    position:absolute;
+    top:-75px;
+    left:-75px;
+    height:150px;
+    width:150px;
+    border:7px solid var(--blue);
+    border-radius:50%;
+}
+
+.line-out{
+    position:absolute;
+    top:-75px;
+    right:-75px;
+    height:150px;
+    width:150px;
+    border:7px solid var(--blue);
+    border-radius:50%;
+}
+
+.water-in{
+    width:60px;
+    height:auto;
+    position:absolute;
+    top:0px;
+    left:-5px;
+}
+
+.water-out{
+    width:60px;
+    height:auto;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+article div{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    gap:20px;
+}
+
+article img{
+    border-radius:10px;
+    max-width:100%;
+    height:auto;
+    transition-delay:300ms;
+}
+
+article h1{
+    font-family:Acme, sans-serif;
+    position:relative;
+    font-size:3rem;
+    color:var(--white);
+    margin-bottom:70px;
+    text-align:center;
+}
+
+article h1:after{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    width:100%;
+    height:4px;
+    background-color:var(--blue);
+}
+
+.south-intro > .layout-row{
+    gap:50px;
+}
+
+:is(.south-intro > .layout-row,
+    .north-intro > .layout-row){
+    gap:50px;
+}
+
+:is(.south-intro p, .north-intro p){
+    max-width:30ch;
+}
+
+:is(.south-history p, .south-description p,
+    .north-history p, .north-description p){
+    max-width:70ch;
+}
+
+@media only screen and (max-width: 600px) {
+    :is(#pic1, #picc1, #pic2, #picc2, #pic3, #picc3,  #pic4, #pic5){
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    article h1{
+        font-size:2rem;
+    }
+
+    :is(.north-intro h1, .south-intro h1){
+        padding-top:70px;
+    }
+
+    :is(#upper article, #lower article){
+        width:90%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    article div{
+        display:block;
+    }
+
+    :is(#pic2,#picc2, #pic4){
+        float:right;
+    }
+
+    :is(#pic1, #picc1, #pic3, #picc3, #pic5){
+        float:left;
+        padding-right:5px;
+    }
+
+    :is(.north-intro h1, .south-intro h1){
+        font-size:1.5rem;
+    }
+}
+
+@media only screen and (min-width:682px){
+    :is(.north-intro h1, .south-intro h1){
+        font-size:2rem;
+    }
+}
+
+@media only screen and (min-width:893px){
+    :is(.north-intro h1, .south-intro h1){
+        font-size:3rem;
+    }
+}
+
+@media only screen and (max-width:1448px){
+    :is(.south-intro > .layout-row,
+        .north-intro > .layout-row){
+        gap:20px;
+        flex-direction:column;
+    }
+}
