@@ -16,15 +16,16 @@
     <link rel="stylesheet" href="../css/characters/char_header.css">
     <link rel="stylesheet" href="../css/characters/char_main.css">
 	<link rel="stylesheet" href="../css/characters/aang.css">
+	<link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 	<div id="loading-page">
         <div class="box"></div>
-        <img src="/pictures/mainchars/aang.webp" alt="">
+        <img src="../pictures/mainchars/aang.webp" alt="">
 		<h1 class="hidden2">Avatar Aang</h1>
     </div>
     <header id="header" class="hidden">
-		<a href="/index.html" aria-label="Main page"><img src="/pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="../index.html" aria-label="Main page"><img src="../pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -33,43 +34,75 @@
 			<ul class="menu">
 				<li>Tribes
 					<ul class="submenu length1">
-						<li><a href="/watertribe.html">Water Tribes</a></li>
-						<li><a href="/earthtribe.html">Earth Kingdom</a></li>
-						<li><a href="/firetribe.html">Fire Nation</a></li>
-						<li><a href="/airtribe.html">Air Nomads</a></li>
+						<li><a href="../watertribe.html">Water Tribes</a></li>
+						<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+						<li><a href="../firetribe.html">Fire Nation</a></li>
+						<li><a href="../airtribe.html">Air Nomads</a></li>
 					</ul>
 				</li>
 				<li class="menu2">Characters
 					<ul class="submenu length2">
 						<li>Main Characters
 							<ul class="submenu2 first-sub">
-								<li><a href="/characters/aang.html">Aang</a></li>
-								<li><a href="/characters/katara.html">Katara</a></li>
-								<li><a href="/characters/sokka.html">Sokka</a></li>
-								<li><a href="/characters/toph.html">Toph Beifong</a></li>
-								<li><a href="/characters/zuko.html">Prince Zuko</a></li>
+								<li><a href="../characters/aang.html">Aang</a></li>
+								<li><a href="../characters/katara.html">Katara</a></li>
+								<li><a href="../characters/sokka.html">Sokka</a></li>
+								<li><a href="../characters/toph.html">Toph Beifong</a></li>
+								<li><a href="../characters/zuko.html">Prince Zuko</a></li>
 							</ul>
 						</li>
 						<li>Recurring Characters
 							<ul class="submenu2">
-								<li><a href="/characters/azula.html">Princess Azula</a></li>
-								<li><a href="/characters/zhao.html">Admiral Zhao</a></li>
-								<li><a href="/characters/suki.html">Suki</a></li>
-								<li><a href="/characters/bumi.html">King Bumi</a></li>
-								<li><a href="/characters/yue.html">Princess Yue</a></li>
-								<li><a href="/characters/hakoda.html">Hakoda</a></li>
-								<li><a href="/characters/jet.html">Jet</a></li>
-								<li><a href="/characters/mai.html">Mai</a></li>
-								<li><a href="/characters/tylee.html">Ty Lee</a></li>
-								<li><a href="/characters/ozai.html">Fire Lord Ozai</a></li>
-								<li><a href="/characters/roku.html">Avatar Roku</a></li>
-								<li><a href="/characters/iroh.html">General Iroh</a></li>
+								<li><a href="../characters/azula.html">Princess Azula</a></li>
+								<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+								<li><a href="../characters/suki.html">Suki</a></li>
+								<li><a href="../characters/bumi.html">King Bumi</a></li>
+								<li><a href="../characters/yue.html">Princess Yue</a></li>
+								<li><a href="../characters/hakoda.html">Hakoda</a></li>
+								<li><a href="../characters/jet.html">Jet</a></li>
+								<li><a href="../characters/mai.html">Mai</a></li>
+								<li><a href="../characters/tylee.html">Ty Lee</a></li>
+								<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+								<li><a href="../characters/roku.html">Avatar Roku</a></li>
+								<li><a href="../characters/iroh.html">General Iroh</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		<div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="watertribe.html">Water Tribes</a></li>
+				<li><a href="earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="firetribe.html">Fire Nation</a></li>
+				<li><a href="airtribe.html">Air Nomads</a></li>
+				<li><a href="characters/aang.html">Aang</a></li>
+				<li><a href="characters/aang.html#appa">Appa</a></li>
+				<li><a href="characters/aang.html#momo">Momo</a></li>
+				<li><a href="characters/katara.html">Katara</a></li>
+				<li><a href="characters/sokka.html">Sokka</a></li>
+				<li><a href="characters/toph.html">Toph Beifong</a></li>
+				<li><a href="characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="characters/azula.html">Princess Azula</a></li>
+				<li><a href="characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="characters/suki.html">Suki</a></li>
+				<li><a href="characters/bumi.html">King Bumi</a></li>
+				<li><a href="characters/yue.html">Princess Yue</a></li>
+				<li><a href="characters/hakoda.html">Hakoda</a></li>
+				<li><a href="characters/jet.html">Jet</a></li>
+				<li><a href="characters/mai.html">Mai</a></li>
+				<li><a href="characters/tylee.html">Ty Lee</a></li>
+				<li><a href="characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="characters/roku.html">Avatar Roku</a></li>
+				<li><a href="characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page" class="layout-column">
         <article class="layout-row">
@@ -103,7 +136,7 @@
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/appa.webp" width="480" height="445" alt="" id="character">
+				<img src="../pictures/characters/appa.webp" width="480" height="445" alt="" id="character">
 			</div>
 		</article>
 		<article class="layout-row" id="momo">
@@ -119,14 +152,14 @@
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/momo.webp" width="310" height="397" alt="" id="character">
+				<img src="../pictures/characters/momo.webp" width="310" height="397" alt="" id="character">
 			</div>
 		</article>
     </main>
-	<script src="/js/characters/char_loading.js"></script>
-    <script defer src="/js/slidein.js"></script>
+	<script src="../js/characters/char_loading.js"></script>
+    <script defer src="../js/slidein.js"></script>
     <a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-    <script defer src="/js/gotop.js"></script>
+    <script defer src="../js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>

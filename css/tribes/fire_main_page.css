@@ -165,7 +165,7 @@ img{
     height:auto;
     padding-top:100px;
 	gap:10px;
-	background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(255, 0, 0, 0.2)), url(/pictures/tribes/fire/background.webp);
+	background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(255, 0, 0, 0.2)), url(../../pictures/tribes/fire/background.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center;

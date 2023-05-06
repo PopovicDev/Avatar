@@ -165,7 +165,7 @@ img{
     height:auto;
     padding-top:100px;
 	gap:10px;
-	background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(51,113,72, 0.45)), url(/pictures/tribes/earth/background2.webp);
+	background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(51,113,72, 0.45)), url(../../pictures/tribes/earth/background2.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center;

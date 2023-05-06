@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/tribes/fire_main_page.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/tribes/fire_header.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
     <div id="loading-page">
@@ -68,6 +69,38 @@
 				</li>
 			</ul>
 		</nav>
+        <div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="watertribe.html">Water Tribes</a></li>
+				<li><a href="earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="firetribe.html">Fire Nation</a></li>
+				<li><a href="airtribe.html">Air Nomads</a></li>
+				<li><a href="characters/aang.html">Aang</a></li>
+				<li><a href="characters/aang.html#appa">Appa</a></li>
+				<li><a href="characters/aang.html#momo">Momo</a></li>
+				<li><a href="characters/katara.html">Katara</a></li>
+				<li><a href="characters/sokka.html">Sokka</a></li>
+				<li><a href="characters/toph.html">Toph Beifong</a></li>
+				<li><a href="characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="characters/azula.html">Princess Azula</a></li>
+				<li><a href="characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="characters/suki.html">Suki</a></li>
+				<li><a href="characters/bumi.html">King Bumi</a></li>
+				<li><a href="characters/yue.html">Princess Yue</a></li>
+				<li><a href="characters/hakoda.html">Hakoda</a></li>
+				<li><a href="characters/jet.html">Jet</a></li>
+				<li><a href="characters/mai.html">Mai</a></li>
+				<li><a href="characters/tylee.html">Ty Lee</a></li>
+				<li><a href="characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="characters/roku.html">Avatar Roku</a></li>
+				<li><a href="characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page">
         <section id="content">
@@ -717,6 +750,7 @@
     <script src="js/tribes/earth_loading.js"></script>
 	<a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
 	<script defer src="js/gotop.js"></script>
+    <script defer src="js/search.js"></script>
     <script defer src="js/slidein.js"></script>
 	<script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
