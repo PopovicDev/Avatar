@@ -21,6 +21,18 @@ function search(){
     let ul = document.getElementById('search-list');
     let li = ul.getElementsByTagName('li');
     let bar = document.getElementById('search-bar');
+    let value = input.value.trim();
+    if(value.length == 0){
+        for(i = 0;i < li.length; i++){
+            li[i].style.display = 'block';
+        }
+    }
+    if(value.length != 0){
+        bar.style.height = 'auto';
+    }
+    else{
+        bar.style.height ='500px';
+    }
 
     for(i = 0;i < li.length; i++){
         let a = li[i].getElementsByTagName('a')[0];
@@ -32,15 +44,6 @@ function search(){
             li[i].style.display = 'none';
         }
     }
-
-    input.addEventListener('keyup', () => {
-        let value = input.value.trim();
-        if(value.length == 0){
-            for(i = 0;i < li.length; i++){
-                li[i].style.display = 'none';
-            }
-        }
-    })
 }
 
 let ull = document.getElementById('search-list');
@@ -52,6 +55,7 @@ addEventListener('click', () => {
         for(i = 0;i < lii.length; i++){
             lii[i].style.display = 'none';
         }
+        bar.style.height = 'auto';
     }
     else{
         search();
