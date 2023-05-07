@@ -3,7 +3,7 @@ body{
 }
 
 .char-header-picture{
-    background:url(/pictures/characters/aangbg.webp) no-repeat;
+    background:url(../../pictures/characters/aangbg.webp) no-repeat;
     width:800px;
     height:200px;
     border:3px solid var(--text-color);

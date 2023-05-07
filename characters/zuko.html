@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only waterbender...">
+    <meta name="description" content="Zuko is a Fire Nation royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is the...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Zuko</title>
-    <link rel="shortcut icon" href="/icon.png">
-	<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="shortcut icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/characters/char_header.css">
     <link rel="stylesheet" href="../css/characters/char_main.css">
     <link rel="stylesheet" href="../css/characters/zuko.css">
+	<link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 	<div id="loading-page">
         <div class="box"></div>
-        <img src="/pictures/mainchars/zuko.webp" alt="">
+        <img src="../pictures/mainchars/zuko.webp" alt="">
 		<h1 class="hidden2">Prince Zuko</h1>
     </div>
     <header id="header" class="hidden">
-		<a href="/index.html" aria-label="Main page"><img src="/pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="../index.html" aria-label="Main page"><img src="../pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -33,43 +34,75 @@
 			<ul class="menu">
 				<li>Tribes
 					<ul class="submenu length1">
-						<li><a href="/watertribe.html">Water Tribes</a></li>
-						<li><a href="/earthtribe.html">Earth Kingdom</a></li>
-						<li><a href="/firetribe.html">Fire Nation</a></li>
-						<li><a href="/airtribe.html">Air Nomads</a></li>
+						<li><a href="../watertribe.html">Water Tribes</a></li>
+						<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+						<li><a href="../firetribe.html">Fire Nation</a></li>
+						<li><a href="../airtribe.html">Air Nomads</a></li>
 					</ul>
 				</li>
 				<li class="menu2">Characters
 					<ul class="submenu length2">
 						<li>Main Characters
 							<ul class="submenu2 first-sub">
-								<li><a href="/characters/aang.html">Aang</a></li>
-								<li><a href="/characters/katara.html">Katara</a></li>
-								<li><a href="/characters/sokka.html">Sokka</a></li>
-								<li><a href="/characters/toph.html">Toph Beifong</a></li>
-								<li><a href="/characters/zuko.html">Prince Zuko</a></li>
+								<li><a href="../characters/aang.html">Aang</a></li>
+								<li><a href="../characters/katara.html">Katara</a></li>
+								<li><a href="../characters/sokka.html">Sokka</a></li>
+								<li><a href="../characters/toph.html">Toph Beifong</a></li>
+								<li><a href="../characters/zuko.html">Prince Zuko</a></li>
 							</ul>
 						</li>
 						<li>Recurring Characters
 							<ul class="submenu2">
-								<li><a href="/characters/azula.html">Princess Azula</a></li>
-								<li><a href="/characters/zhao.html">Admiral Zhao</a></li>
-								<li><a href="/characters/suki.html">Suki</a></li>
-								<li><a href="/characters/bumi.html">King Bumi</a></li>
-								<li><a href="/characters/yue.html">Princess Yue</a></li>
-								<li><a href="/characters/hakoda.html">Hakoda</a></li>
-								<li><a href="/characters/jet.html">Jet</a></li>
-								<li><a href="/characters/mai.html">Mai</a></li>
-								<li><a href="/characters/tylee.html">Ty Lee</a></li>
-								<li><a href="/characters/ozai.html">Fire Lord Ozai</a></li>
-								<li><a href="/characters/roku.html">Avatar Roku</a></li>
-								<li><a href="/characters/iroh.html">General Iroh</a></li>
+								<li><a href="../characters/azula.html">Princess Azula</a></li>
+								<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+								<li><a href="../characters/suki.html">Suki</a></li>
+								<li><a href="../characters/bumi.html">King Bumi</a></li>
+								<li><a href="../characters/yue.html">Princess Yue</a></li>
+								<li><a href="../characters/hakoda.html">Hakoda</a></li>
+								<li><a href="../characters/jet.html">Jet</a></li>
+								<li><a href="../characters/mai.html">Mai</a></li>
+								<li><a href="../characters/tylee.html">Ty Lee</a></li>
+								<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+								<li><a href="../characters/roku.html">Avatar Roku</a></li>
+								<li><a href="../characters/iroh.html">General Iroh</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		<div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="../watertribe.html">Water Tribes</a></li>
+				<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="../firetribe.html">Fire Nation</a></li>
+				<li><a href="../airtribe.html">Air Nomads</a></li>
+				<li><a href="../characters/aang.html">Aang</a></li>
+				<li><a href="../characters/aang.html#appa">Appa</a></li>
+				<li><a href="../characters/aang.html#momo">Momo</a></li>
+				<li><a href="../characters/katara.html">Katara</a></li>
+				<li><a href="../characters/sokka.html">Sokka</a></li>
+				<li><a href="../characters/toph.html">Toph Beifong</a></li>
+				<li><a href="../characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="../characters/azula.html">Princess Azula</a></li>
+				<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="../characters/suki.html">Suki</a></li>
+				<li><a href="../characters/bumi.html">King Bumi</a></li>
+				<li><a href="../characters/yue.html">Princess Yue</a></li>
+				<li><a href="../characters/hakoda.html">Hakoda</a></li>
+				<li><a href="../characters/jet.html">Jet</a></li>
+				<li><a href="../characters/mai.html">Mai</a></li>
+				<li><a href="../characters/tylee.html">Ty Lee</a></li>
+				<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="../characters/roku.html">Avatar Roku</a></li>
+				<li><a href="../characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page" class="layout-column">
         <article class="layout-row">
@@ -83,18 +116,19 @@
 					</div>
 				</div>
 				<p class="paragraphs-font hidden2">
-					Zuko is a <b><a href="/firetribe.html">Fire Nation</a></b> royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is the eldest child and only son of Princess Ursa and <b><a href="/characters/ozai.html">Fire Lord Ozai</a></b>. Originally the primary enemy of Team Avatar, Zuko devoted three years to trying to capture the long-lost Avatar to end his banishment and regain his honor as Crown Prince of the Fire Nation. He is recognizable by the distinctive burn scar on the left side of his face, which was given to him by his father, Ozai, shortly before his banishment as a result of an incident in which he unintentionally disrespected his father by speaking out of turn and refusing to duel him.<br><br>With support from his paternal uncle, General Iroh, and after much internal struggle and turmoil, Zuko rejected Ozai and his model of the Fire Nation. He instead joined the Avatar's group to become <b><a href="/characters/aang.html">Aang</a></b>'s lifelong friend and firebending mentor and was determined to end the war and restore both his and the Fire Nation's honor. While Aang defeated Ozai, Zuko, with the help of <b><a href="/characters/katara.html">Katara</a></b>, defeated his younger sister, <b><a href="/characters/azula.html">Princess Azula</a></b>, and took his place as Fire Lord, declaring the end of the Hundred Year War and the start of a new era of love and peace.<br><br>At the beginning of his reign, Zuko had to overcome great difficulties and solve several crises, especially those caused by the Harmony Restoration Movement and the New Ozai Society. Nevertheless, he succeeded in maintaining peace and eventually became one of the founders of the United Republic of Nations. Zuko stepped down from his position as Fire Lord in 167 AG and became an ambassador of peace, relinquishing the throne to his daughter, Izumi.
+					Zuko is a <b><a href="../firetribe.html">Fire Nation</a></b> royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is the eldest child and only son of Princess Ursa and <b><a href="../characters/ozai.html">Fire Lord Ozai</a></b>. Originally the primary enemy of Team Avatar, Zuko devoted three years to trying to capture the long-lost Avatar to end his banishment and regain his honor as Crown Prince of the Fire Nation. He is recognizable by the distinctive burn scar on the left side of his face, which was given to him by his father, Ozai, shortly before his banishment as a result of an incident in which he unintentionally disrespected his father by speaking out of turn and refusing to duel him.<br><br>With support from his paternal uncle, General Iroh, and after much internal struggle and turmoil, Zuko rejected Ozai and his model of the Fire Nation. He instead joined the Avatar's group to become <b><a href="../characters/aang.html">Aang</a></b>'s lifelong friend and firebending mentor and was determined to end the war and restore both his and the Fire Nation's honor. While Aang defeated Ozai, Zuko, with the help of <b><a href="../characters/katara.html">Katara</a></b>, defeated his younger sister, <b><a href="../characters/azula.html">Princess Azula</a></b>, and took his place as Fire Lord, declaring the end of the Hundred Year War and the start of a new era of love and peace.<br><br>At the beginning of his reign, Zuko had to overcome great difficulties and solve several crises, especially those caused by the Harmony Restoration Movement and the New Ozai Society. Nevertheless, he succeeded in maintaining peace and eventually became one of the founders of the United Republic of Nations. Zuko stepped down from his position as Fire Lord in 167 AG and became an ambassador of peace, relinquishing the throne to his daughter, Izumi.
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/zuko.webp" width="240" height="400" alt="" id="character">
+				<img src="../pictures/characters/zuko.webp" width="240" height="400" alt="" id="character">
 			</div>
 		</article>
     </main>
-	<script src="/js/characters/char_loading.js"></script>
-    <script defer src="/js/slidein.js"></script>
+	<script src="../js/characters/char_loading.js"></script>
+    <script defer src="../js/slidein.js"></script>
+	<script defer src="../js/search.js"></script>
     <a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-    <script defer src="/js/gotop.js"></script>
+    <script defer src="../js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>

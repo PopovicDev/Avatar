@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only waterbender...">
+    <meta name="description" content="Azula was a princess of the Fire Nation, daughter of Fire Lord Ozai and Ursa, younger sister of Zuko, and older half-sister of Kiyi. She was...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Azula</title>
-    <link rel="shortcut icon" href="/icon.png">
-	<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="shortcut icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/characters/char_header.css">
     <link rel="stylesheet" href="../css/characters/char_main.css">
     <link rel="stylesheet" href="../css/characters/azula.css">
+	<link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 	<div id="loading-page">
         <div class="box"></div>
-        <img src="/pictures/characters/azula_pixel.webp" alt="">
+        <img src="../pictures/characters/azula_pixel.webp" alt="">
 		<h1 class="hidden2">Princess Azula</h1>
     </div>
     <header id="header" class="hidden">
-		<a href="/index.html" aria-label="Main page"><img src="/pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="../index.html" aria-label="Main page"><img src="../pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -33,43 +34,75 @@
 			<ul class="menu">
 				<li>Tribes
 					<ul class="submenu length1">
-						<li><a href="/watertribe.html">Water Tribes</a></li>
-						<li><a href="/earthtribe.html">Earth Kingdom</a></li>
-						<li><a href="/firetribe.html">Fire Nation</a></li>
-						<li><a href="/airtribe.html">Air Nomads</a></li>
+						<li><a href="../watertribe.html">Water Tribes</a></li>
+						<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+						<li><a href="../firetribe.html">Fire Nation</a></li>
+						<li><a href="../airtribe.html">Air Nomads</a></li>
 					</ul>
 				</li>
 				<li class="menu2">Characters
 					<ul class="submenu length2">
 						<li>Main Characters
 							<ul class="submenu2 first-sub">
-								<li><a href="/characters/aang.html">Aang</a></li>
-								<li><a href="/characters/katara.html">Katara</a></li>
-								<li><a href="/characters/sokka.html">Sokka</a></li>
-								<li><a href="/characters/toph.html">Toph Beifong</a></li>
-								<li><a href="/characters/zuko.html">Prince Zuko</a></li>
+								<li><a href="../characters/aang.html">Aang</a></li>
+								<li><a href="../characters/katara.html">Katara</a></li>
+								<li><a href="../characters/sokka.html">Sokka</a></li>
+								<li><a href="../characters/toph.html">Toph Beifong</a></li>
+								<li><a href="../characters/zuko.html">Prince Zuko</a></li>
 							</ul>
 						</li>
 						<li>Recurring Characters
 							<ul class="submenu2">
-								<li><a href="/characters/azula.html">Princess Azula</a></li>
-								<li><a href="/characters/zhao.html">Admiral Zhao</a></li>
-								<li><a href="/characters/suki.html">Suki</a></li>
-								<li><a href="/characters/bumi.html">King Bumi</a></li>
-								<li><a href="/characters/yue.html">Princess Yue</a></li>
-								<li><a href="/characters/hakoda.html">Hakoda</a></li>
-								<li><a href="/characters/jet.html">Jet</a></li>
-								<li><a href="/characters/mai.html">Mai</a></li>
-								<li><a href="/characters/tylee.html">Ty Lee</a></li>
-								<li><a href="/characters/ozai.html">Fire Lord Ozai</a></li>
-								<li><a href="/characters/roku.html">Avatar Roku</a></li>
-								<li><a href="/characters/iroh.html">General Iroh</a></li>
+								<li><a href="../characters/azula.html">Princess Azula</a></li>
+								<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+								<li><a href="../characters/suki.html">Suki</a></li>
+								<li><a href="../characters/bumi.html">King Bumi</a></li>
+								<li><a href="../characters/yue.html">Princess Yue</a></li>
+								<li><a href="../characters/hakoda.html">Hakoda</a></li>
+								<li><a href="../characters/jet.html">Jet</a></li>
+								<li><a href="../characters/mai.html">Mai</a></li>
+								<li><a href="../characters/tylee.html">Ty Lee</a></li>
+								<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+								<li><a href="../characters/roku.html">Avatar Roku</a></li>
+								<li><a href="../characters/iroh.html">General Iroh</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		<div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="../watertribe.html">Water Tribes</a></li>
+				<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="../firetribe.html">Fire Nation</a></li>
+				<li><a href="../airtribe.html">Air Nomads</a></li>
+				<li><a href="../characters/aang.html">Aang</a></li>
+				<li><a href="../characters/aang.html#appa">Appa</a></li>
+				<li><a href="../characters/aang.html#momo">Momo</a></li>
+				<li><a href="../characters/katara.html">Katara</a></li>
+				<li><a href="../characters/sokka.html">Sokka</a></li>
+				<li><a href="../characters/toph.html">Toph Beifong</a></li>
+				<li><a href="../characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="../characters/azula.html">Princess Azula</a></li>
+				<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="../characters/suki.html">Suki</a></li>
+				<li><a href="../characters/bumi.html">King Bumi</a></li>
+				<li><a href="../characters/yue.html">Princess Yue</a></li>
+				<li><a href="../characters/hakoda.html">Hakoda</a></li>
+				<li><a href="../characters/jet.html">Jet</a></li>
+				<li><a href="../characters/mai.html">Mai</a></li>
+				<li><a href="../characters/tylee.html">Ty Lee</a></li>
+				<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="../characters/roku.html">Avatar Roku</a></li>
+				<li><a href="../characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page" class="layout-column">
         <article class="layout-row">
@@ -83,18 +116,19 @@
 					</div>
 				</div>
 				<p class="paragraphs-font hidden2">
-					Azula was a princess of the <b><a href="/firetribe.html">Fire Nation</a></b>, daughter of <b><a href="/characters/ozai.html">Fire Lord Ozai</a></b> and Ursa, younger sister of <b><a href="/characters/zuko.html">Zuko</a></b>, and older half-sister of Kiyi. She was a key adversary of Team Avatar, chasing Avatar <b><a href="/characters/aang.html">Aang</a></b> and her banished brother far across the <b><a href="/earthtribe.html">Earth Kingdom</a></b> accompanied by her then two best friends, <b><a href="/characters/mai.html">Mai</a></b> and <b><a href="/characters/tylee.html">Ty Lee</a></b>.<br><br>A firebending prodigy, Azula was manipulative and obsessed with power. She was a skilled strategist who orchestrated the coup of the Earth Kingdom capital, Ba Sing Se, and halted the invasion on the Day of Black Sun.<br><br>Azula harbored deep mental instabilities, believing her mother loved Zuko more than her. Raised by her father in an environment without a mother-figure, Azula had to be nothing less than perfect in her father's eyes in order to gain affection and attention from him. After the betrayal of her two closest friends Mai and Ty Lee, these instabilities were brought up to the surface. Upon the arrival of Sozin's Comet, Azula was soon to be crowned Fire Lord; however, her defeat at the hands of her brother Zuko and <b><a href="/characters/katara.html">Katara</a></b> caused her to suffer a complete mental breakdown.<br><br>Following her emotional breakdown, Azula was put in a mental health facility to recover, though she eventually joined Team Avatar on their search for Ursa, as part of her secret agenda to betray them and usurp the throne from Zuko. At this quest's completion, however, Azula escaped the team's supervision.<br><br>Sometime after her exile, Azula returned to the Fire Nation Capital in secret. Having finally accepted that she would never be Fire Lord, Azula resorted to manipulating Zuko so that she could rule through him. Gathering a group of female supporters, she took on the guise of the mythical Kemurikage to intimidate Ukano into threatening Zuko. When that failed, Azula and her followers resorted to kidnapping children in the capital, setting the city into civil unrest. Though Zuko and his allies were able to rescue the children, Azula and her followers escaped.
+					Azula was a princess of the <b><a href="../firetribe.html">Fire Nation</a></b>, daughter of <b><a href="../characters/ozai.html">Fire Lord Ozai</a></b> and Ursa, younger sister of <b><a href="../characters/zuko.html">Zuko</a></b>, and older half-sister of Kiyi. She was a key adversary of Team Avatar, chasing Avatar <b><a href="../characters/aang.html">Aang</a></b> and her banished brother far across the <b><a href="../earthtribe.html">Earth Kingdom</a></b> accompanied by her then two best friends, <b><a href="../characters/mai.html">Mai</a></b> and <b><a href="../characters/tylee.html">Ty Lee</a></b>.<br><br>A firebending prodigy, Azula was manipulative and obsessed with power. She was a skilled strategist who orchestrated the coup of the Earth Kingdom capital, Ba Sing Se, and halted the invasion on the Day of Black Sun.<br><br>Azula harbored deep mental instabilities, believing her mother loved Zuko more than her. Raised by her father in an environment without a mother-figure, Azula had to be nothing less than perfect in her father's eyes in order to gain affection and attention from him. After the betrayal of her two closest friends Mai and Ty Lee, these instabilities were brought up to the surface. Upon the arrival of Sozin's Comet, Azula was soon to be crowned Fire Lord; however, her defeat at the hands of her brother Zuko and <b><a href="../characters/katara.html">Katara</a></b> caused her to suffer a complete mental breakdown.<br><br>Following her emotional breakdown, Azula was put in a mental health facility to recover, though she eventually joined Team Avatar on their search for Ursa, as part of her secret agenda to betray them and usurp the throne from Zuko. At this quest's completion, however, Azula escaped the team's supervision.<br><br>Sometime after her exile, Azula returned to the Fire Nation Capital in secret. Having finally accepted that she would never be Fire Lord, Azula resorted to manipulating Zuko so that she could rule through him. Gathering a group of female supporters, she took on the guise of the mythical Kemurikage to intimidate Ukano into threatening Zuko. When that failed, Azula and her followers resorted to kidnapping children in the capital, setting the city into civil unrest. Though Zuko and his allies were able to rescue the children, Azula and her followers escaped.
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/azula.webp" width="401" height="753" alt="" id="character">
+				<img src="../pictures/characters/azula.webp" width="401" height="753" alt="" id="character">
 			</div>
 		</article>
     </main>
-	<script src="/js/characters/char_loading.js"></script>
-    <script defer src="/js/slidein.js"></script>
+	<script src="../js/characters/char_loading.js"></script>
+    <script defer src="../js/slidein.js"></script>
+	<script defer src="../js/search.js"></script>
     <a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-    <script defer src="/js/gotop.js"></script>
+    <script defer src="../js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only waterbender...">
+    <meta name="description" content="Sokka was a Water Tribe warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Sokka</title>
-    <link rel="shortcut icon" href="/icon.png">
-	<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="shortcut icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/characters/char_header.css">
     <link rel="stylesheet" href="../css/characters/char_main.css">
     <link rel="stylesheet" href="../css/characters/sokka.css">
+	<link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 	<div id="loading-page">
         <div class="box"></div>
-        <img src="/pictures/mainchars/sokka.webp" alt="">
+        <img src="../pictures/mainchars/sokka.webp" alt="">
 		<h1 class="hidden2">Sokka</h1>
     </div>
     <header id="header" class="hidden">
-		<a href="/index.html" aria-label="Main page"><img src="/pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="../index.html" aria-label="Main page"><img src="../pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -33,43 +34,75 @@
 			<ul class="menu">
 				<li>Tribes
 					<ul class="submenu length1">
-						<li><a href="/watertribe.html">Water Tribes</a></li>
-						<li><a href="/earthtribe.html">Earth Kingdom</a></li>
-						<li><a href="/firetribe.html">Fire Nation</a></li>
-						<li><a href="/airtribe.html">Air Nomads</a></li>
+						<li><a href="../watertribe.html">Water Tribes</a></li>
+						<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+						<li><a href="../firetribe.html">Fire Nation</a></li>
+						<li><a href="../airtribe.html">Air Nomads</a></li>
 					</ul>
 				</li>
 				<li class="menu2">Characters
 					<ul class="submenu length2">
 						<li>Main Characters
 							<ul class="submenu2 first-sub">
-								<li><a href="/characters/aang.html">Aang</a></li>
-								<li><a href="/characters/katara.html">Katara</a></li>
-								<li><a href="/characters/sokka.html">Sokka</a></li>
-								<li><a href="/characters/toph.html">Toph Beifong</a></li>
-								<li><a href="/characters/zuko.html">Prince Zuko</a></li>
+								<li><a href="../characters/aang.html">Aang</a></li>
+								<li><a href="../characters/katara.html">Katara</a></li>
+								<li><a href="../characters/sokka.html">Sokka</a></li>
+								<li><a href="../characters/toph.html">Toph Beifong</a></li>
+								<li><a href="../characters/zuko.html">Prince Zuko</a></li>
 							</ul>
 						</li>
 						<li>Recurring Characters
 							<ul class="submenu2">
-								<li><a href="/characters/azula.html">Princess Azula</a></li>
-								<li><a href="/characters/zhao.html">Admiral Zhao</a></li>
-								<li><a href="/characters/suki.html">Suki</a></li>
-								<li><a href="/characters/bumi.html">King Bumi</a></li>
-								<li><a href="/characters/yue.html">Princess Yue</a></li>
-								<li><a href="/characters/hakoda.html">Hakoda</a></li>
-								<li><a href="/characters/jet.html">Jet</a></li>
-								<li><a href="/characters/mai.html">Mai</a></li>
-								<li><a href="/characters/tylee.html">Ty Lee</a></li>
-								<li><a href="/characters/ozai.html">Fire Lord Ozai</a></li>
-								<li><a href="/characters/roku.html">Avatar Roku</a></li>
-								<li><a href="/characters/iroh.html">General Iroh</a></li>
+								<li><a href="../characters/azula.html">Princess Azula</a></li>
+								<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+								<li><a href="../characters/suki.html">Suki</a></li>
+								<li><a href="../characters/bumi.html">King Bumi</a></li>
+								<li><a href="../characters/yue.html">Princess Yue</a></li>
+								<li><a href="../characters/hakoda.html">Hakoda</a></li>
+								<li><a href="../characters/jet.html">Jet</a></li>
+								<li><a href="../characters/mai.html">Mai</a></li>
+								<li><a href="../characters/tylee.html">Ty Lee</a></li>
+								<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+								<li><a href="../characters/roku.html">Avatar Roku</a></li>
+								<li><a href="../characters/iroh.html">General Iroh</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		<div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="../watertribe.html">Water Tribes</a></li>
+				<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="../firetribe.html">Fire Nation</a></li>
+				<li><a href="../airtribe.html">Air Nomads</a></li>
+				<li><a href="../characters/aang.html">Aang</a></li>
+				<li><a href="../characters/aang.html#appa">Appa</a></li>
+				<li><a href="../characters/aang.html#momo">Momo</a></li>
+				<li><a href="../characters/katara.html">Katara</a></li>
+				<li><a href="../characters/sokka.html">Sokka</a></li>
+				<li><a href="../characters/toph.html">Toph Beifong</a></li>
+				<li><a href="../characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="../characters/azula.html">Princess Azula</a></li>
+				<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="../characters/suki.html">Suki</a></li>
+				<li><a href="../characters/bumi.html">King Bumi</a></li>
+				<li><a href="../characters/yue.html">Princess Yue</a></li>
+				<li><a href="../characters/hakoda.html">Hakoda</a></li>
+				<li><a href="../characters/jet.html">Jet</a></li>
+				<li><a href="../characters/mai.html">Mai</a></li>
+				<li><a href="../characters/tylee.html">Ty Lee</a></li>
+				<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="../characters/roku.html">Avatar Roku</a></li>
+				<li><a href="../characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page" class="layout-column">
         <article class="layout-row">
@@ -83,18 +116,19 @@
 					</div>
 				</div>
 				<p class="paragraphs-font hidden2">
-					Sokka was a <b><a href="/watertribe.html">Water Tribe</a></b> warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother and his father's departure for war, Sokka was raised by his grandmother Kanna along with his younger sister <b><a href="/characters/katara.html">Katara</a></b>.<br><br>Hakoda left along with all of the other men in his tribe to fight the <b><a href="/firetribe.html">Fire Nation</a></b> when Sokka was a young boy. Despite his desire to join his father, Sokka was not permitted to accompany the men on the mission and was left behind. As there were no other teenage boys in the tribe, Sokka was the oldest male in the South Pole and, therefore, left as the leader of the tribe. He assumed responsibility for the tribe, haplessly training children to be future warriors until his sister discovered an Air Nomad named <b><a href="/characters/aang.html">Aang</a></b> frozen in an iceberg. When he learned that Aang was the Avatar, he was at first skeptical that a child could really save the world. As he and his sister helped Aang on his quest, he began to believe that Aang really was the only hope for peace in the world.<br><br>Despite his inability to bend, Sokka became the strategist of the group, constantly trying to prove himself to be a great warrior like his father. He attempted to train the younger children of the Southern Water Tribe in fighting. Sokka was also the "matter of fact" guy in the group and did not believe in spirit magic, as he openly mocked it. His leadership skills improved during his travels with the Avatar, culminating with his masterminding the plan for the invasion of the Fire Nation on the Day of Black Sun. His humor and his ability to organize and plan became imperative to the group on their travels. By the conclusion of the Hundred Year War, Sokka became a master swordsman and a great warrior like his father.<br><br>After Aang and <b><a href="/characters/zuko.html">Zuko</a></b> formed the United Republic of Nations, Sokka became the representative for the Southern Water Tribe on the United Republic Council, as well as its chairman.
+					Sokka was a <b><a href="../watertribe.html">Water Tribe</a></b> warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother and his father's departure for war, Sokka was raised by his grandmother Kanna along with his younger sister <b><a href="../characters/katara.html">Katara</a></b>.<br><br>Hakoda left along with all of the other men in his tribe to fight the <b><a href="../firetribe.html">Fire Nation</a></b> when Sokka was a young boy. Despite his desire to join his father, Sokka was not permitted to accompany the men on the mission and was left behind. As there were no other teenage boys in the tribe, Sokka was the oldest male in the South Pole and, therefore, left as the leader of the tribe. He assumed responsibility for the tribe, haplessly training children to be future warriors until his sister discovered an Air Nomad named <b><a href="../characters/aang.html">Aang</a></b> frozen in an iceberg. When he learned that Aang was the Avatar, he was at first skeptical that a child could really save the world. As he and his sister helped Aang on his quest, he began to believe that Aang really was the only hope for peace in the world.<br><br>Despite his inability to bend, Sokka became the strategist of the group, constantly trying to prove himself to be a great warrior like his father. He attempted to train the younger children of the Southern Water Tribe in fighting. Sokka was also the "matter of fact" guy in the group and did not believe in spirit magic, as he openly mocked it. His leadership skills improved during his travels with the Avatar, culminating with his masterminding the plan for the invasion of the Fire Nation on the Day of Black Sun. His humor and his ability to organize and plan became imperative to the group on their travels. By the conclusion of the Hundred Year War, Sokka became a master swordsman and a great warrior like his father.<br><br>After Aang and <b><a href="../characters/zuko.html">Zuko</a></b> formed the United Republic of Nations, Sokka became the representative for the Southern Water Tribe on the United Republic Council, as well as its chairman.
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/sokka.webp" width="356" height="689" alt="" id="character">
+				<img src="../pictures/characters/sokka.webp" width="356" height="689" alt="" id="character">
 			</div>
 		</article>
     </main>
-	<script src="/js/characters/char_loading.js"></script>
-    <script defer src="/js/slidein.js"></script>
+	<script src="../js/characters/char_loading.js"></script>
+    <script defer src="../js/slidein.js"></script>
+	<script defer src="../js/search.js"></script>
     <a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-    <script defer src="/js/gotop.js"></script>
+    <script defer src="../js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>

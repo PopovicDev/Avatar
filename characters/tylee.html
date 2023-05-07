@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only waterbender...">
+    <meta name="description" content="Ty Lee was a cheerful and energetic girl who hailed from the Fire Nation. As the daughter of a nobleman, she attended the Royal Fire Academy...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Ty Lee</title>
-    <link rel="shortcut icon" href="/icon.png">
-	<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="shortcut icon" href="../icon.png">
+	<link rel="apple-touch-icon" href="../icon.png">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/characters/char_header.css">
     <link rel="stylesheet" href="../css/characters/char_main.css">
     <link rel="stylesheet" href="../css/characters/tylee.css">
+	<link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 	<div id="loading-page">
         <div class="box"></div>
-        <img src="/pictures/characters/tylee_pixel.webp" alt="">
+        <img src="../pictures/characters/tylee_pixel.webp" alt="">
 		<h1 class="hidden2">Ty Lee</h1>
     </div>
     <header id="header" class="hidden">
-		<a href="/index.html" aria-label="Main page"><img src="/pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="../index.html" aria-label="Main page"><img src="../pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -33,43 +34,75 @@
 			<ul class="menu">
 				<li>Tribes
 					<ul class="submenu length1">
-						<li><a href="/watertribe.html">Water Tribes</a></li>
-						<li><a href="/earthtribe.html">Earth Kingdom</a></li>
-						<li><a href="/firetribe.html">Fire Nation</a></li>
-						<li><a href="/airtribe.html">Air Nomads</a></li>
+						<li><a href="../watertribe.html">Water Tribes</a></li>
+						<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+						<li><a href="../firetribe.html">Fire Nation</a></li>
+						<li><a href="../airtribe.html">Air Nomads</a></li>
 					</ul>
 				</li>
 				<li class="menu2">Characters
 					<ul class="submenu length2">
 						<li>Main Characters
 							<ul class="submenu2 first-sub">
-								<li><a href="/characters/aang.html">Aang</a></li>
-								<li><a href="/characters/katara.html">Katara</a></li>
-								<li><a href="/characters/sokka.html">Sokka</a></li>
-								<li><a href="/characters/toph.html">Toph Beifong</a></li>
-								<li><a href="/characters/zuko.html">Prince Zuko</a></li>
+								<li><a href="../characters/aang.html">Aang</a></li>
+								<li><a href="../characters/katara.html">Katara</a></li>
+								<li><a href="../characters/sokka.html">Sokka</a></li>
+								<li><a href="../characters/toph.html">Toph Beifong</a></li>
+								<li><a href="../characters/zuko.html">Prince Zuko</a></li>
 							</ul>
 						</li>
 						<li>Recurring Characters
 							<ul class="submenu2">
-								<li><a href="/characters/azula.html">Princess Azula</a></li>
-								<li><a href="/characters/zhao.html">Admiral Zhao</a></li>
-								<li><a href="/characters/suki.html">Suki</a></li>
-								<li><a href="/characters/bumi.html">King Bumi</a></li>
-								<li><a href="/characters/yue.html">Princess Yue</a></li>
-								<li><a href="/characters/hakoda.html">Hakoda</a></li>
-								<li><a href="/characters/jet.html">Jet</a></li>
-								<li><a href="/characters/mai.html">Mai</a></li>
-								<li><a href="/characters/tylee.html">Ty Lee</a></li>
-								<li><a href="/characters/ozai.html">Fire Lord Ozai</a></li>
-								<li><a href="/characters/roku.html">Avatar Roku</a></li>
-								<li><a href="/characters/iroh.html">General Iroh</a></li>
+								<li><a href="../characters/azula.html">Princess Azula</a></li>
+								<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+								<li><a href="../characters/suki.html">Suki</a></li>
+								<li><a href="../characters/bumi.html">King Bumi</a></li>
+								<li><a href="../characters/yue.html">Princess Yue</a></li>
+								<li><a href="../characters/hakoda.html">Hakoda</a></li>
+								<li><a href="../characters/jet.html">Jet</a></li>
+								<li><a href="../characters/mai.html">Mai</a></li>
+								<li><a href="../characters/tylee.html">Ty Lee</a></li>
+								<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+								<li><a href="../characters/roku.html">Avatar Roku</a></li>
+								<li><a href="../characters/iroh.html">General Iroh</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		<div id="search-bar">
+			<input type="text" id="input" onkeyup="search()" placeholder="Search for something...">
+			<span class="button">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</span>
+			<i class="fa-solid fa-x"></i>
+			<ul id="search-list">
+				<li><a href="../watertribe.html">Water Tribes</a></li>
+				<li><a href="../earthtribe.html">Earth Kingdom</a></li>
+				<li><a href="../firetribe.html">Fire Nation</a></li>
+				<li><a href="../airtribe.html">Air Nomads</a></li>
+				<li><a href="../characters/aang.html">Aang</a></li>
+				<li><a href="../characters/aang.html#appa">Appa</a></li>
+				<li><a href="../characters/aang.html#momo">Momo</a></li>
+				<li><a href="../characters/katara.html">Katara</a></li>
+				<li><a href="../characters/sokka.html">Sokka</a></li>
+				<li><a href="../characters/toph.html">Toph Beifong</a></li>
+				<li><a href="../characters/zuko.html">Prince Zuko</a></li>
+				<li><a href="../characters/azula.html">Princess Azula</a></li>
+				<li><a href="../characters/zhao.html">Admiral Zhao</a></li>
+				<li><a href="../characters/suki.html">Suki</a></li>
+				<li><a href="../characters/bumi.html">King Bumi</a></li>
+				<li><a href="../characters/yue.html">Princess Yue</a></li>
+				<li><a href="../characters/hakoda.html">Hakoda</a></li>
+				<li><a href="../characters/jet.html">Jet</a></li>
+				<li><a href="../characters/mai.html">Mai</a></li>
+				<li><a href="../characters/tylee.html">Ty Lee</a></li>
+				<li><a href="../characters/ozai.html">Fire Lord Ozai</a></li>
+				<li><a href="../characters/roku.html">Avatar Roku</a></li>
+				<li><a href="../characters/iroh.html">General Iroh</a></li>
+			</ul>
+		</div>
 	</header>
     <main id="main-page" class="layout-column">
         <article class="layout-row">
@@ -83,18 +116,19 @@
 					</div>
 				</div>
 				<p class="paragraphs-font hidden2">
-					Ty Lee was a cheerful and energetic girl who hailed from the <b><a href="/firetribe.html">Fire Nation</a></b>. As the daughter of a nobleman, she attended the Royal Fire Academy for Girls with her friends, <b><a href="/characters/azula.html">Princess Azula</a></b> and <b><a href="/characters/mai.html">Mai</a></b>. Growing up, Ty Lee dealt with six sisters who shared identical appearances with her. This caused her to feel a loss of individuality and led her to have a longing to be a unique, recognizable person, and a desire for attention from other people. Because of this, after she matured, she ran away from her home and joined a Fire Nation circus, becoming a skilled acrobatic performer and gaining more personal attention.<br><br>Ty Lee was a formidable hand-to-hand combatant, often utilizing chi-blocking, a unique form of martial arts that targets pressure points located in the human body. By striking these, she was able to disrupt an individual's chi flow and temporarily paralyze them, thereby also preventing the victim from bending for a period of time. Mai and Ty Lee were recruited by Princess Azula to hunt down and capture <b><a href="/characters/zuko.html">Prince Zuko</a></b> and <b><a href="/characters/iroh.html">Iroh</a></b>, and later Avatar <b><a href="/characters/aang.html">Aang</a></b> and his friends.<br><br>Mai later betrayed Azula to save Zuko's life, and when the infuriated princess retaliated, Ty Lee defended Mai by paralyzing Azula, which led to her imprisonment. While in prison, she met the Kyoshi Warriors for a second time and befriended them. In return for teaching them how to chi-block, they allowed her to join their group. Upon their release at the end of the Hundred Year War, Ty Lee adopted their makeup and clothes, effectively becoming part of a matched set once again, though this time with the reassurance that she could become a unique individual again whenever she wanted, simply by removing her makeup and uniform.
+					Ty Lee was a cheerful and energetic girl who hailed from the <b><a href="../firetribe.html">Fire Nation</a></b>. As the daughter of a nobleman, she attended the Royal Fire Academy for Girls with her friends, <b><a href="../characters/azula.html">Princess Azula</a></b> and <b><a href="../characters/mai.html">Mai</a></b>. Growing up, Ty Lee dealt with six sisters who shared identical appearances with her. This caused her to feel a loss of individuality and led her to have a longing to be a unique, recognizable person, and a desire for attention from other people. Because of this, after she matured, she ran away from her home and joined a Fire Nation circus, becoming a skilled acrobatic performer and gaining more personal attention.<br><br>Ty Lee was a formidable hand-to-hand combatant, often utilizing chi-blocking, a unique form of martial arts that targets pressure points located in the human body. By striking these, she was able to disrupt an individual's chi flow and temporarily paralyze them, thereby also preventing the victim from bending for a period of time. Mai and Ty Lee were recruited by Princess Azula to hunt down and capture <b><a href="../characters/zuko.html">Prince Zuko</a></b> and <b><a href="../characters/iroh.html">Iroh</a></b>, and later Avatar <b><a href="../characters/aang.html">Aang</a></b> and his friends.<br><br>Mai later betrayed Azula to save Zuko's life, and when the infuriated princess retaliated, Ty Lee defended Mai by paralyzing Azula, which led to her imprisonment. While in prison, she met the Kyoshi Warriors for a second time and befriended them. In return for teaching them how to chi-block, they allowed her to join their group. Upon their release at the end of the Hundred Year War, Ty Lee adopted their makeup and clothes, effectively becoming part of a matched set once again, though this time with the reassurance that she could become a unique individual again whenever she wanted, simply by removing her makeup and uniform.
 				</p>
 			</div>
 			<div class="char-pic hidden3">
-				<img src="/pictures/characters/tylee.webp" width="293" height="750" alt="" id="character">
+				<img src="../pictures/characters/tylee.webp" width="293" height="750" alt="" id="character">
 			</div>
 		</article>
     </main>
-	<script src="/js/characters/char_loading.js"></script>
-    <script defer src="/js/slidein.js"></script>
+	<script src="../js/characters/char_loading.js"></script>
+    <script defer src="../js/slidein.js"></script>
+	<script defer src="../js/search.js"></script>
     <a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-    <script defer src="/js/gotop.js"></script>
+    <script defer src="../js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
 </body>
 </html>
