@@ -165,7 +165,7 @@ img{
     height:auto;
     padding-top:100px;
 	gap:10px;
-	background-image:linear-gradient(rgba(0,0,0, 0.5), rgba(110, 117, 182, 0.4)), url(/pictures/tribes/air/background.webp);
+	background-image:linear-gradient(rgba(0,0,0, 0.5), rgba(110, 117, 182, 0.4)), url(../../pictures/tribes/air/background.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center;
