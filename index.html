@@ -139,24 +139,24 @@
 			<div id="world-map-map">
 				<img src="./pictures/world_map/default-world-map.webp" alt="World map" id="picture" width="1000" height="725">
 				<input type="checkbox" id="check1">
-				<label for="check1" id="position1-air" onmouseover="Vazduh1()"></label>
+				<label for="check1" id="position1-air" onmouseover="Picture('air1-world-map.webp');" onclick="Territory(0, 'air1-world-map.webp')"></label>
 				<input type="checkbox" id="check2">
-				<label for="check2" id="position2-air" onmouseover="Vazduh2()"></label>
+				<label for="check2" id="position2-air" onmouseover="Picture('air2-world-map.webp');" onclick="Territory(1, 'air2-world-map.webp')"></label>
 				<input type="checkbox" id="check3">
-				<label for="check3" id="position3-air" onmouseover="Vazduh3()"></label>
+				<label for="check3" id="position3-air" onmouseover="Picture('air3-world-map.webp')" onclick="Territory(2, 'air3-world-map.webp')"></label>
 				<input type="checkbox" id="check4">
-				<label for="check4" id="position4-water" onmouseover="Water1()"></label>
+				<label for="check4" id="position4-water" onmouseover="Picture('water1-world-map.webp')" onclick="Territory(3, 'water1-world-map.webp')"></label>
 				<input type="checkbox" id="check5">
-				<label for="check5" id="position5-water" onmouseover="Water2()"></label>
+				<label for="check5" id="position5-water" onmouseover="Picture('water2-world-map.webp')" onclick="Territory(4, 'water2-world-map.webp')"></label>
 				<input type="checkbox" id="check6">
-				<label for="check6" id="position6-earth1" onmouseover="Earth()"></label>
+				<label for="check6" id="position6-earth1" onmouseover="Picture('earth-world-map.webp')" onclick="Territory(5, 'earth-world-map.webp')"></label>
 				<input type="checkbox" id="check7">
-				<label for="check7" id="position6-earth2" onmouseover="Earth()"></label>
+				<label for="check7" id="position6-earth2" onmouseover="Picture('earth-world-map.webp')" onclick="Territory(5, 'earth-world-map.webp')"></label>
 				<input type="checkbox" id="check8">
-				<label for="check8" id="position6-earth3" onmouseover="Earth()"></label>
+				<label for="check8" id="position6-earth3" onmouseover="Picture('earth-world-map.webp')" onclick="Territory(5, 'earth-world-map.webp')"></label>
 				<input type="checkbox" id="check9">
-				<label for="check9" id="position7-fire" onmouseover="Fire()"></label>
-				<div id="AirOne">
+				<label for="check9" id="position7-fire" onmouseover="Picture('fire-world-map.webp')" onclick="Territory(6, 'fire-world-map.webp')"></label>
+				<div id="AirOne" data-texts>
 					<img src="pictures/world_map/airbending.webp" alt="Airbending" loading="lazy">
 					<div>
 						<h2 style="color:#2297a8;">Air Nomads</h2>
@@ -167,7 +167,7 @@
 						<button class="tribe-readmore" style="background-color:#2297a8; border-color:#2297a8;"><a href="airtribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="AirTwo">
+				<div id="AirTwo" data-texts>
 					<img src="pictures/world_map/airbending.webp" alt="Airbending" loading="lazy">
 					<div>
 						<h2 style="color:#2297a8;">Air Nomads</h2>
@@ -178,7 +178,7 @@
 						<button class="tribe-readmore" style="background-color:#2297a8; border-color:#2297a8;"><a href="airtribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="AirThree">
+				<div id="AirThree" data-texts>
 					<img src="pictures/world_map/airbending.webp" alt="Airbending" loading="lazy">
 					<div>
 						<h2 style="color:#2297a8;">Air Nomads</h2>
@@ -189,7 +189,7 @@
 						<button class="tribe-readmore" style="background-color:#2297a8; border-color:#2297a8;"><a href="airtribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="WaterOne">
+				<div id="WaterOne" data-texts>
 					<img src="pictures/world_map/waterbending.webp" alt="Waterbending" loading="lazy">
 					<div>
 						<h2 style="color:#005aff;">North Water Tribe</h2>
@@ -201,7 +201,7 @@
 						<button class="tribe-readmore" style="background-color:#005aff; border-color:#005aff;"><a href="watertribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="WaterTwo">
+				<div id="WaterTwo" data-texts>
 					<img src="pictures/world_map/waterbending.webp" alt="Waterbending" loading="lazy">
 					<div>
 						<h2 style="color:#005aff;">South Water Tribe</h2>
@@ -213,7 +213,7 @@
 						<button class="tribe-readmore" style="background-color:#005aff; border-color:#005aff;"><a href="watertribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="Earth">
+				<div id="Earth" data-texts>
 					<img src="pictures/world_map/earthbending.webp" alt="Earthbending" loading="lazy">
 					<div>
 						<h2 style="color:green;">Earth Kingdom</h2>
@@ -224,7 +224,7 @@
 						<button class="tribe-readmore" style="border-color:green; background-color:green;"><a href="earthtribe.html">READ MORE</a></button>
 					</div>
 				</div>
-				<div id="Fire">
+				<div id="Fire" data-texts>
 					<img src="pictures/world_map/firebending.webp" alt="Firebending" loading="lazy">
 					<div>
 						<h2 style="color:red;">Fire Nation</h2>
