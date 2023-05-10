@@ -426,11 +426,6 @@ details.firee summary:before {
 }
 
 @media only screen and (max-width:767px){
-    #picture{
-        max-width:70%;
-        margin-bottom:50px;
-    }
-
     .wm-tribes .layout-row{
         display:flex;
         flex-direction:column;
