@@ -5,7 +5,6 @@ function Picture(value){
     picture.src = "./pictures/world_map/" + value;
 }
 function Territory(textnum, value){
-    parseInt(textnum);
     for(i in texts){
         texts[i].style.display = 'none';
     }
