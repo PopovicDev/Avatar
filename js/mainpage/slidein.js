@@ -22,6 +22,16 @@ const observer3 = new IntersectionObserver((entries) => {
     })
 });
 
+const observer4 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            button.classList.add('go-top');
+        }
+        if(!entry.isIntersecting){
+            button.classList.remove('go-top');
+        }
+    })
+});
 
 const hiddenElements1 = document.querySelectorAll('.hidden');
 hiddenElements1.forEach((el) => observer1.observe(el));
@@ -31,3 +41,8 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 
 const hiddenElements3 = document.querySelectorAll('.hidden3');
 hiddenElements3.forEach((el) => observer3.observe(el));
+
+const button = document.getElementById('top');
+
+const hiddenElement = document.getElementById('scroll');
+observer4.observe(hiddenElement);

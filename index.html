@@ -41,7 +41,7 @@
 		<div class="loader"></div>
 	</section>
 	<header id="header">
-		<a href="#" aria-label="Main page"><img src="pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
+		<a href="/index.html" aria-label="Main page"><img src="pictures/logo.webp" alt="Site logo - arrow up" loading="lazy" width="80" height="80"></a>
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -121,20 +121,19 @@
 		</div>
 	</header>
 	<main id="main-page">
-		<img src="./pictures/mainpage-air.webp" alt="Air element" class="mainpage-behind air-position">
-		<img src="./pictures/mainpage-water.webp" alt="Water element" class="mainpage-behind water-position">
-		<img src="./pictures/mainpage-earth.webp" alt="Earth element" class="mainpage-behind earth-position">
-		<img src="./pictures/mainpage-fire.webp" alt="Fire element" class="mainpage-behind fire-position">
-		<section class="intro hidden">
-			<img src="./pictures/intro/appa.webp" alt="Appa" width="266" height="232" id="appa">
+		<section class="intro" id="start">
 			<p class="paragraphs-font"><b>Avatar: The Last Airbender</b> is set in a world consisting four nations, named after the four elements: the<b><a href="watertribe.html"> Water Tribes</a></b>, the<b><a href="earthtribe.html"> Earth Kingdom</a></b>, the<b><a href="firetribe.html"> Fire Nation</a></b>, and the<b><a href="airtribe.html"> Air Nomads</a></b>. In each nation, people known as <b>"benders"</b>, have the ability to telikinetically manipulate and control the element corresponding to their nation. The <b>"Avatar"</b> is the only individual with the ability to bend all four elements.</p>
-			<img src="./pictures/intro/avatar.webp" alt="Aang" width="122" height="295" id="aang">
+			<img src="./pictures/front-2.webp" class="main" alt="Parallax Layer">
+            <img src="./pictures/back-1.webp" class="mountain1" alt="Parallax Layer">
+            <img src="./pictures/front-1.webp" class="mountain2" alt="Parallax Layer">
 		</section>
+		<img src="./pictures/back-2.png" alt="" class="back">
 		<hr class="hr-text hidden2">
 		<section class="world-map-intro hidden">
 			<h1>Check out the world map!</h1>
 			<h2>Select the tribes on the world map and find out more about them!</h2>
 		</section>
+		<div id="scroll">
 		<section id="world-map" class="hidden">
 			<div id="world-map-map">
 				<img src="./pictures/world_map/default-world-map.webp" alt="World map" id="picture" width="1000" height="725">
@@ -495,9 +494,10 @@
 				<img src="pictures/firebending1.webp" alt="Firebending" id="firez" loading="lazy">
 			</div>
 		</article>
+		</div>
 	</main>
 	<script defer src="js/mainpage/loading.js" type="text/javascript"></script>
-	<script defer src="js/slidein.js"></script>
+	<script defer src="js/mainpage/slidein.js"></script>
 	<script defer src="js/search.js"></script>
 	<script defer src="js/mainpage/world_map.js" type="text/javascript"></script>
 	<script>
@@ -535,8 +535,7 @@
 		carousel.scrollLeft -= 500;
 		};
 	</script>
+	<a href="#start" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
 	<script src="https://kit.fontawesome.com/ea3edf7906.js" crossorigin="anonymous"></script>
-	<a href="#" id="top" aria-label="Go to the top of the page"><i class="arrow fa-solid fa-arrow-up"></i></a>
-	<script defer src="js/gotop.js" type="text/javascript"></script>
 </body>
 </html>
