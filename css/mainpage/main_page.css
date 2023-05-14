@@ -411,6 +411,7 @@ body::-webkit-scrollbar{
 	}
 
 	.intro p{
+		padding:0px 0px 100px 0px;
 		font-size:1.2rem;
 	}
 }
@@ -508,10 +509,6 @@ body::-webkit-scrollbar{
 
 	.intro{
 		flex-direction:column;
-	}
-
-	.intro p{
-		padding:0;
 	}
 
 	.pictures{
