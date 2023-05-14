@@ -50,7 +50,7 @@ let ull = document.getElementById('search-list');
 let lii = ull.getElementsByTagName('li');
 let bar = document.getElementById('search-bar');
 
-addEventListener('click', () => {
+window.addEventListener('click', () => {
     if(input !== document.activeElement){
         for(i = 0;i < lii.length; i++){
             lii[i].style.display = 'none';
